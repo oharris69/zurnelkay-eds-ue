@@ -7,3 +7,12 @@ helix-importer-ui
 .DS_Store
 *.bak
 .idea
+
+# Stray artifacts (not part of the project)
+/--help
+/CODE_OF_CONDUCT.xml
+/README.xml
+
+# Local migration build outputs (JCR conversion + content package live under migration-work, already ignored)
+tools/importer/bd-snapshots/
+tools/importer/reports/

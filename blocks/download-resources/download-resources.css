@@ -1,0 +1,81 @@
+/* download-resources — "Resources" band with a centered heading and a
+   vertical list of downloadable document links, each with a download icon.
+
+   Values extracted from the source .ze-resources / .ze-resources-listing
+   computed styles. The band sits inside a section with class "dark"
+   (styles.css .section.dark supplies the dark navy background + white text),
+   so this file does NOT re-declare the background — it only handles the
+   layout, spacing, typography and icon color that the section can't provide. */
+
+/* Section band spacing (source .ze-resources padding: 48px 0 24px).
+   Scoped to this block's own section container. */
+.download-resources-container {
+  padding: 48px 0 24px;
+}
+
+/* Centered "Resources" heading (source h2: 32px / 500, centered,
+   margin 0 0 9.6px). Color comes from .section.dark h2 (white). */
+.download-resources-container h2 {
+  text-align: center;
+  margin: 0 0 9.6px;
+}
+
+/* Centered single-column panel (source column ~480px wide, centered in the
+   band; contents left-aligned within it). */
+.download-resources .download-resources-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 16px 0;
+  max-width: 480px;
+  text-align: left;
+}
+
+/* Subgroup label "Other" (source h3: 16px / 500, left-aligned,
+   margin 0 0 8px). */
+.download-resources .download-resources-group {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.2px;
+}
+
+.download-resources .download-resources-item {
+  margin: 0;
+}
+
+/* Document link (source a.download: 16px / 500, no underline,
+   padding 14.4px vertical — consecutive links touch with no extra gap). */
+.download-resources .download-resources-link,
+.download-resources a.button.download-resources-link:any-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14.4px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+
+  /* Source link color #253746 on a light panel; adapted to white so it stays
+     legible on the dark section background. */
+  color: #fff;
+}
+
+.download-resources .download-resources-link:hover,
+.download-resources a.button.download-resources-link:hover {
+  text-decoration: underline;
+}
+
+/* Download icon (source: 20x20, teal fill #01846C). The block JS inserts an
+   inline SVG using stroke="currentColor"; color it teal to match the source. */
+.download-resources .download-resources-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  color: #01846c;
+}
+
+/* Suppress the global `a::after` Font Awesome chevron on resource links. */
+.download-resources a::after {
+  content: none;
+}

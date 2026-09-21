@@ -1,0 +1,68 @@
+/* breadcrumb-product — Zurn product-hierarchy trail.
+ * Values extracted from source .lk-breadcrumbs computed styles:
+ *   list ul  : display flex; flex-wrap wrap; margin 0; padding 0
+ *   item li  : margin 0 8px 0 0; padding 0
+ *   link a   : inline-block; padding 16px 4.8px; font-size 14px;
+ *              font-weight 500; line-height 14px; color #005995
+ *   separator: content "/"; color #00b497; font-size 16px; font-weight 700
+ *   current  : inline-block; padding 16px 4.8px; font-size 14px;
+ *              font-weight 400; line-height 14px; color #000
+ */
+
+.breadcrumb-product .breadcrumb-product-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--body-font-family);
+}
+
+.breadcrumb-product .breadcrumb-product-item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 8px 0 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* "/" separator before every item except the first. */
+.breadcrumb-product .breadcrumb-product-item + .breadcrumb-product-item::before {
+  content: "/";
+  color: #00b497;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 14px;
+}
+
+.breadcrumb-product .breadcrumb-product-link {
+  display: inline-block;
+  padding: 16px 4.8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: var(--brand-blue, #005995);
+  text-decoration: none;
+}
+
+/* Suppress the global Font Awesome chevron appended to every <a> —
+   the source breadcrumb links have no trailing arrow. */
+.breadcrumb-product .breadcrumb-product-link::after {
+  content: none;
+}
+
+.breadcrumb-product .breadcrumb-product-link:hover,
+.breadcrumb-product .breadcrumb-product-link:focus {
+  text-decoration: underline;
+}
+
+.breadcrumb-product .breadcrumb-product-current {
+  display: inline-block;
+  padding: 16px 4.8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: var(--text-color, #000);
+}

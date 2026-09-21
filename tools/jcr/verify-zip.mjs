@@ -1,0 +1,10 @@
+import unzipper from '/home/node/.excat-marketplaces/excat-marketplace/excat/tools/excatops-mcp/node_modules/unzipper/unzip.js';
+const dir = await unzipper.Open.file('migration-work/dist/zurn-product-detail-1.0.0.zip');
+const names = dir.files.map(f => f.path);
+console.log('total entries:', names.length);
+console.log('has META-INF/vault/filter.xml:', names.includes('META-INF/vault/filter.xml'));
+console.log('has META-INF/vault/properties.xml:', names.includes('META-INF/vault/properties.xml'));
+console.log('jcr_root at root:', names.some(n => n.startsWith('jcr_root/content/zurn/products/')));
+console.log('.content.xml count:', names.filter(n => n.endsWith('.content.xml')).length);
+console.log('sample page entries:');
+names.filter(n => n.endsWith('.content.xml')).slice(0,3).forEach(n => console.log('  ', n));

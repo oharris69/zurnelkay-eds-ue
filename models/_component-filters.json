@@ -12,11 +12,14 @@
       "action-button",
       "button",
       "button",
+      "breadcrumb-product",
       "cards",
       "carousel",
       "columns",
+      "columns-product",
       "contentfragment",
       "download-list",
+      "download-resources",
       "dm-asset",
       "dm-template",
       "embed-adaptive-form",
@@ -39,28 +42,6 @@
     ]
   },
   {
-    "id": "cards",
-    "components": [
-      "card"
-    ]
-  },
-  {
-    "id": "columns",
-    "components": [
-      "column"
-    ]
-  },
-  {
-    "id": "column",
-    "components": [
-      "button",
-      "dm-asset",
-      "dm-template",
-      "image",
-      "text",
-      "title",
-      "title-block",
-      "video"
-    ]
+    "...": "../blocks/*/_*.json#/filters"
   }
 ]

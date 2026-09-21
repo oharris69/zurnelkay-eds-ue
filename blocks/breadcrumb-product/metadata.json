@@ -1,0 +1,10 @@
+{
+  "variantName": "breadcrumb-product",
+  "baseBlock": "breadcrumb",
+  "visualCharacteristics": "Horizontal navigation trail of linked ancestor pages separated by '/' delimiters, ending with the bold current-page label. Wraps on narrow viewports.",
+  "contentPattern": "One row per crumb, in hierarchy order; linked crumbs are ancestors, a plain-text crumb is the current page.",
+  "usage": "Product detail and product listing pages — top-of-page hierarchy navigation.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["breadcrumb-product"]
+}

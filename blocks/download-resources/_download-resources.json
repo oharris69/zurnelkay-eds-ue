@@ -1,0 +1,64 @@
+{
+  "definitions": [
+    {
+      "title": "Download Resources",
+      "id": "download-resources",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Download Resources",
+              "model": "download-resources",
+              "filter": "download-resources"
+            }
+          }
+        }
+      }
+    },
+    {
+      "title": "Resource",
+      "id": "download-resources-item",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block/item",
+            "template": {
+              "name": "Resource",
+              "model": "download-resources-item"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "download-resources",
+      "fields": []
+    },
+    {
+      "id": "download-resources-item",
+      "fields": [
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Document link"
+        },
+        {
+          "component": "text",
+          "name": "label",
+          "label": "Label"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "download-resources",
+      "components": [
+        "download-resources-item"
+      ]
+    }
+  ]
+}

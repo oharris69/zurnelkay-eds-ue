@@ -1,0 +1,10 @@
+{
+  "variantName": "columns-product",
+  "baseBlock": "columns",
+  "visualCharacteristics": "Two-column product layout: left cell a large product image, right cell an SKU eyebrow, product title heading, short description, a 'Where to Buy' CTA button, and a bulleted selling-features list with check icons. Stacks to a single column on mobile with the image first.",
+  "contentPattern": "One row, two cells: image | product info (heading + paragraph + link + list). Optional following row for a badge beneath the image.",
+  "usage": "Product detail pages — primary product identity/media grid (#PDPGrid).",
+  "canonicalModel": "standalone",
+  "options": [],
+  "memberVariantIds": ["columns-product"]
+}

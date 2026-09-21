@@ -1,0 +1,10 @@
+{
+  "variantName": "download-resources",
+  "baseBlock": "download-list",
+  "visualCharacteristics": "A 'Resources' band (rendered on a dark section background) with a centered heading, an optional subgroup label (e.g. 'Other'), and a vertical list of downloadable document links, each preceded by a download icon.",
+  "contentPattern": "One row per resource link; an optional leading text-only row acts as a subgroup heading. Links are direct document URLs authored inline.",
+  "usage": "Product detail pages — bottom 'Resources' download band.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["download-resources"]
+}

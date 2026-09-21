@@ -1,0 +1,1320 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://www.zurn.com/",
+        "https://www.zurn.com/tools/carrier-code-book",
+        "https://www.zurn.com/tools/interceptor-sizing-tool",
+        "https://www.zurn.com/tools/manufacturer-cross-reference",
+        "https://www.zurn.com/tools/prv-calculator",
+        "https://www.zurn.com/tools/prv-calculator?v=1",
+        "https://www.zurn.com/tools/spec-sheet-lookup",
+        "https://www.zurn.com/us/en.html",
+        "https://www.zurn.com/us/en/contact-us.html",
+        "https://www.zurn.com/us/en/guided-product-selection.html",
+        "https://www.zurn.com/us/en/innovation-efficiency.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/900xl3.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/elevator-threshold-drain.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/ez-gear-technology.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/ez-gear-technology/ez-gear-sensor-faucets.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/ez-gear-technology/ez-gear-sensor-flush-valves.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/ez1.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/hydropower/hydro-x-ez-gear-technology.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/lean-construction.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/paired-performance.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/pex.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/plumbsmart.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/roof-drains.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/smartpro.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/water-efficiency.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/zurn-green-turtle.html",
+        "https://www.zurn.com/us/en/markets/fire-protection.html",
+        "https://www.zurn.com/us/en/markets/food-beverage.html",
+        "https://www.zurn.com/us/en/markets/food-service.html",
+        "https://www.zurn.com/us/en/markets/government.html",
+        "https://www.zurn.com/us/en/markets/healthcare.html",
+        "https://www.zurn.com/us/en/markets/hospitality.html",
+        "https://www.zurn.com/us/en/markets/retail.html",
+        "https://www.zurn.com/us/en/markets/waterworks.html",
+        "https://www.zurn.com/us/en/resources/about-zurn-guided-product-selection.html",
+        "https://www.zurn.com/us/en/support/phix-registration.html",
+        "https://www.zurn.com/where-to-buy/distributor-locator",
+        "https://www.zurn.com/where-to-buy/rep-locator"
+      ],
+      "coverageGaps": [],
+      "description": "Landing page with hero carousel, feature-card grid, tabbed resource links, markets carousel and full-width media sections",
+      "blocks": []
+    },
+    {
+      "name": "file-cabinet-page",
+      "urls": [
+        "https://www.zurn.com/file-cabinet"
+      ],
+      "coverageGaps": [],
+      "description": "File-cabinet/download listing page with minimal server-rendered content",
+      "blocks": []
+    },
+    {
+      "name": "guided-selection-tool",
+      "urls": [
+        "https://www.zurn.com/guided-selection/lavatories",
+        "https://www.zurn.com/guided-selection/urinals",
+        "https://www.zurn.com/guided-selection/water-closets",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/kiewit-keeps-streetcar-project-on-track.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/las-vegas-raiders-case-study.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/raiders-case-study-update-sustainability-upgrades.html"
+      ],
+      "coverageGaps": [],
+      "description": "JavaScript-driven interactive guided-selection tool page with minimal server-rendered body",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-wellbuilding",
+      "urls": [
+        "https://www.zurn.com/innovation-efficiency/well-building-standard",
+        "https://www.zurn.com/us/en/innovation-efficiency/well-building-standard.html",
+        "https://www.zurn.com/us/en/wilkins.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing landing page with hero and content sections",
+      "blocks": []
+    },
+    {
+      "name": "registration-form-page",
+      "urls": [
+        "https://www.zurn.com/interceptor-warranty-registration",
+        "https://www.zurn.com/us/en/about-us.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/sundara.html",
+        "https://www.zurn.com/us/en/resources/webinars-hub.html",
+        "https://www.zurn.com/us/en/support/interceptor-warranty-registration.html"
+      ],
+      "coverageGaps": [],
+      "description": "Registration/warranty form page with form fields and submit action",
+      "blocks": []
+    },
+    {
+      "name": "product-category-landing",
+      "urls": [
+        "https://www.zurn.com/products",
+        "https://www.zurn.com/products/drainage-interceptors",
+        "https://www.zurn.com/products/drainage-interceptors/cleanouts",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors",
+        "https://www.zurn.com/products/drainage-interceptors/interceptors/grease-interceptor",
+        "https://www.zurn.com/products/drainage-interceptors/oil-separators",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains",
+        "https://www.zurn.com/products/drainage-interceptors/solids-interceptors",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain",
+        "https://www.zurn.com/products/finish-plumbing",
+        "https://www.zurn.com/products/finish-plumbing/aquaspec-manual-faucets",
+        "https://www.zurn.com/products/finish-plumbing/manual-flush-valves",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/repair-parts",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products",
+        "https://www.zurn.com/products/fire-protection/backflow-preventers",
+        "https://www.zurn.com/products/fire-protection/fire-valves",
+        "https://www.zurn.com/products/pex",
+        "https://www.zurn.com/products/pex/plumbing",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/fittings",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds/quickport-whole-house-preassembled-manifold",
+        "https://www.zurn.com/products/pex/plumbing/expansion",
+        "https://www.zurn.com/products/pex/plumbing/non-barrier-tubing",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/barrier-tubing",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/controls",
+        "https://www.zurn.com/products/pex/residential-fire-safety",
+        "https://www.zurn.com/products/repair-parts/building-drainage",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass",
+        "https://www.zurn.com/products/repair-parts/water-safety-control",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/large-diameter-backflow-preventer",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/small-diameter-backflow-preventer",
+        "https://www.zurn.com/products/water-control",
+        "https://www.zurn.com/products/water-control/additional-solutions",
+        "https://www.zurn.com/products/water-control/additional-solutions/repair-parts",
+        "https://www.zurn.com/products/water-control/backflow-preventers",
+        "https://www.zurn.com/search?q=%20Z841&f=installationMountingType:Wall-mount"
+      ],
+      "coverageGaps": [],
+      "description": "Category landing page with breadcrumb and a grid of subcategory image cards",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-featured",
+      "urls": [
+        "https://www.zurn.com/products/building-drainage/grease-oil-sediment-separation/sediments-solids-interceptor/microceptor",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/finish-floor-drains/z1072",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors/hydro-mechanical-interceptor/grze",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors/hydro-mechanical-interceptor/z250h",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors/smartpro-monitoring-alarm-systems/smartpro",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1320xl",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1320xl-ez",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1321xl",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1322xl-ez",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1330xl",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1332xl-ez",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1333xl",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/z1395xl",
+        "https://www.zurn.com/products/drainage-interceptors/interceptors/options/smartpro",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/ez1",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/grze-25-pop-assy",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/grze-50-pop-assy",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/grze-75-pop-assy",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/jp1996-sf-vb-rk",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/ms2624",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/z1360xl",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/z1397xl",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/z1996-36",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/primary-roof-drains/z100",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/primary-roof-drains/z100f",
+        "https://www.zurn.com/products/finish-plumbing/aquaspec-manual-faucets/manual-faucets/z85700-xl",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/urinals/z5755-u",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/water-closets/z5615-bwl",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6900-fsd-wm",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6900-sd-wm",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6951-sd",
+        "https://www.zurn.com/products/fire-protection/automatic-control-valves/zw209fp",
+        "https://www.zurn.com/products/water-control/automatic-control-valves/zw205",
+        "https://www.zurn.com/products/water-control/automatic-control-valves/zw206",
+        "https://www.zurn.com/products/water-control/automatic-control-valves/zw209",
+        "https://www.zurn.com/products/water-control/automatic-control-valves/zw209e",
+        "https://www.zurn.com/products/water-control/automatic-control-valves/zw209q",
+        "https://www.zurn.com/products/water-control/automatic-control-valves/zw221-and-zw222",
+        "https://www.zurn.com/products/water-control/backflow-accessories/wbr",
+        "https://www.zurn.com/products/water-control/backflow-preventers/350astda",
+        "https://www.zurn.com/products/water-control/backflow-preventers/375ast",
+        "https://www.zurn.com/products/water-control/backflow-preventers/375astw1",
+        "https://www.zurn.com/products/water-control/backflow-preventers/375xl-12-2",
+        "https://www.zurn.com/products/water-control/backflow-preventers/950xl3",
+        "https://www.zurn.com/products/water-control/backflow-preventers/950xl3bfss",
+        "https://www.zurn.com/products/water-control/backflow-preventers/975xl3",
+        "https://www.zurn.com/products/water-control/backflow-preventers/975xl3bfss",
+        "https://www.zurn.com/products/water-control/backflow-preventers/975xl3n",
+        "https://www.zurn.com/products/water-control/backflow-preventers/fcis",
+        "https://www.zurn.com/products/water-control/shut-off-valves/48",
+        "https://www.zurn.com/products/water-control/wye-strainers/fsc"
+      ],
+      "coverageGaps": [],
+      "description": "Product detail page variant with badges, BIM/Where-to-Buy buttons, feature bullets and resources band",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-minimal",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/acid-neutralization",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-floor-drains",
+        "https://www.zurn.com/products/finish-plumbing/fixtures",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/fittings/crimp-insert-fittings-astmf1807_f2159",
+        "https://www.zurn.com/products/repair-parts",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page with minimal filtering and a short product card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-compact",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/acid-neutralization/phix",
+        "https://www.zurn.com/products/drainage-interceptors/cleanouts/cleanouts",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/area-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/ligature-resistant-drains",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/frame-and-grate",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/lavatories",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems",
+        "https://www.zurn.com/products/finish-plumbing/showers/temp-gard-aqua-panel",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/stops",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/strainers",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/supply-kits",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/traps-commercial-semicast",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/traps-residential-tubular",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/smart-occupancy-lights",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/valves",
+        "https://www.zurn.com/products/pex/plumbing/non-barrier-tubing/pex-coils",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/controls/snow-melt-controls",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/controls/thermostat-controls",
+        "https://www.zurn.com/products/repair-parts/building-drainage/miscellaneous-accessories-installation-repair-kits",
+        "https://www.zurn.com/products/repair-parts/building-drainage/stainless-steel-drainage",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/cover-plates",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/handles",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/body-assembly-mounting",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/spouts",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/products-parts-exploded-view",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/fixtures",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/control-stop",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/covers-and-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/diaphragm-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/handle-assembly-and-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/flush-connections-and-spud-coupling-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/flush-tube-and-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/piston-repair-parts-metroflush",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/miscellaneous",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering/handwall-parts",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering/shower-heads",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering/temp-gard-i",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/large-diameter-backflow-preventer/double-check-detector-assembly",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/miscellaneous-parts-repair-kits",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/pressure-reducing-valve-parts",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/small-diameter-backflow-preventer/reduced-pressure",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/wye-strainers",
+        "https://www.zurn.com/products/water-control/additional-solutions/backflow-accessories",
+        "https://www.zurn.com/products/water-control/additional-solutions/dielectric-unions",
+        "https://www.zurn.com/products/water-control/backflow-preventers/pressure-vacuum-breakers",
+        "https://www.zurn.com/products/water-control/water-hammer-arrestors",
+        "https://www.zurn.com/search?q=AquaVantage&f=accessoryType:Diaphragm%20Kits",
+        "https://www.zurn.com/search?q=foot%20pedal"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page with sort control and a small product image-card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/backwater-valves-traps-primers",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/carrier-parts",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/lavatory-sink-carriers",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/urinal-carriers",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/water-closet-toilet-carriers",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/water-closet-toilet-carriers?f=dinLoadRating:1000lb%20Rated%20Bariatric",
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/water-cooler-carriers",
+        "https://www.zurn.com/products/drainage-interceptors/cleanouts/access-covers",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/cast-iron-trench-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/drain-stabilizers",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/finish-floor-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/flushing-rim-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/integral-trap-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/kettle-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/parking-deck",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/planter-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-drains/shallow-pour-drains",
+        "https://www.zurn.com/products/drainage-interceptors/floor-sinks",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors/gravity-interceptor",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors/hydro-mechanical-interceptor",
+        "https://www.zurn.com/products/drainage-interceptors/grease-interceptors/smartpro-monitoring-alarm-systems",
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors?f=hydrantType:Roof%20Hydrant",
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial",
+        "https://www.zurn.com/products/drainage-interceptors/oil-separators/oil-separator",
+        "https://www.zurn.com/products/drainage-interceptors/oil-separators/smartpro-monitoring-alarm-systems",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/combination-primary-overflow",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/control-flow",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/cornice",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/downspouts",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/high-capacity",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/primary-roof-drains",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/promenade-deck",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/retrofit",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/scupper",
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/siphonic",
+        "https://www.zurn.com/products/drainage-interceptors/solids-interceptors/hair-and-lint-interceptor",
+        "https://www.zurn.com/products/drainage-interceptors/solids-interceptors/sediments-and-solids-interceptor",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-cleanouts",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-floor-drains/cast-stainless-floor-drains",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-floor-drains/fabricated-stainless-floor-drains",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-floor-sinks",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-hub-drains",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-kettle-drains",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-p-traps",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-trap-drains",
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/stainless-trench-drains",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/catch-basin",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/elevator-threshold",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/food-processing",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/general-purpose-drainage-exterior",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/general-purpose-drainage-interior",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/residential",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/sports-complex-recreational",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/transportation",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/utility",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/separators",
+        "https://www.zurn.com/products/finish-plumbing/aquaspec-manual-faucets/manual-faucets",
+        "https://www.zurn.com/products/finish-plumbing/aquaspec-manual-faucets/manual-faucets?f=mountType:Wall%20Mount",
+        "https://www.zurn.com/products/finish-plumbing/aquaspec-manual-faucets/metering-faucets",
+        "https://www.zurn.com/products/finish-plumbing/aquaspec-manual-faucets/other-faucets",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/service-sinks",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/toilet-seats",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/urinals",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/water-closets",
+        "https://www.zurn.com/products/finish-plumbing/hand-dryers",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems?f=powerSource:Battery",
+        "https://www.zurn.com/products/finish-plumbing/manual-flush-valves/bedpan",
+        "https://www.zurn.com/products/finish-plumbing/manual-flush-valves/concealed",
+        "https://www.zurn.com/products/finish-plumbing/manual-flush-valves/diaphragm",
+        "https://www.zurn.com/products/finish-plumbing/manual-flush-valves/piston",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/solenoid-driven",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/solenoid-driven?f=mountType:Wall%20Mount",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-battery-powered",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-hardwire",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-hydropowered",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/piston-battery-powered",
+        "https://www.zurn.com/products/finish-plumbing/showers/temp-gard-accessories",
+        "https://www.zurn.com/products/finish-plumbing/showers/temp-gard-i",
+        "https://www.zurn.com/products/finish-plumbing/showers/temp-gard-iii",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/ada-products-and-accessories",
+        "https://www.zurn.com/products/finish-plumbing/sink-trim/overflows",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/retrofit-kits",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-flush-valves",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers?f=spoutType:Other%20/%20Custom",
+        "https://www.zurn.com/products/finish-plumbing/zurn-one-systems",
+        "https://www.zurn.com/products/fire-protection/automatic-control-valves",
+        "https://www.zurn.com/products/fire-protection/backflow-accessories",
+        "https://www.zurn.com/products/fire-protection/check-valves",
+        "https://www.zurn.com/products/fire-protection/fire-valves/hose-valves-non-regulating",
+        "https://www.zurn.com/products/fire-protection/fire-valves/pressure-regulating-valves",
+        "https://www.zurn.com/products/fire-protection/grooved-couplings-fittings",
+        "https://www.zurn.com/products/fire-protection/in-building-risers",
+        "https://www.zurn.com/products/fire-protection/relief-valves",
+        "https://www.zurn.com/products/fire-protection/shut-off-valves",
+        "https://www.zurn.com/products/fire-protection/switches",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/crimp-rings",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/fittings/crimp-insert-fittings-astmf1807_f2159/cr-polymer",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/fittings/crimp-insert-fittings-astmf1807_f2159/xl-brass-copper",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/installation-accessories",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds/multi-port-copper-tees-and-headers",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds/multi-port-tees",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds/quickport-whole-house-preassembled-manifold/accessories",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds/quickport-whole-house-preassembled-manifold/preassembled-with-valves",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/tools",
+        "https://www.zurn.com/products/pex/plumbing/expansion/brass-fittings",
+        "https://www.zurn.com/products/pex/plumbing/expansion/expansion-rings",
+        "https://www.zurn.com/products/pex/plumbing/expansion/expansion-tools",
+        "https://www.zurn.com/products/pex/plumbing/expansion/plastic-fittings",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/barrier-tubing/alumicor-pex-al-pex",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/barrier-tubing/hy-pe-rtube-barrier-tubing",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/barrier-tubing/performa-barrier-tubing",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/controls/actuators",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/controls/zone-controls",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/crimp-rings",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/fittings",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/fluid-management",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/installation-accessories",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/manifolds-accessories",
+        "https://www.zurn.com/products/pex/radiant-heating-snow-melting-turf-conditioning/tools",
+        "https://www.zurn.com/products/pex/residential-fire-safety/crimp-rings",
+        "https://www.zurn.com/products/pex/residential-fire-safety/fittings",
+        "https://www.zurn.com/products/repair-parts/building-drainage/carriers-fixture-supports",
+        "https://www.zurn.com/products/repair-parts/building-drainage/floor-drain-roof-drain-cleanouts",
+        "https://www.zurn.com/products/repair-parts/building-drainage/floor-sinks",
+        "https://www.zurn.com/products/repair-parts/building-drainage/frame-grate-systems",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial",
+        "https://www.zurn.com/products/repair-parts/building-drainage/traps-primers-specialties",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/metering",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/spouts",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/spray-hoses",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/bedpan-washer-parts",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/sweat-solder-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/tail-piece-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/products-parts-exploded-view",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/products-parts-exploded-view",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/specialty-lavatories-service-sinks",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass/basket-strainers",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass/overflow",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass/supply-stops-kits-components",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass/traps",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/atmospheric-vacuum-breaker-parts",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/large-diameter-backflow-preventer/double-check",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/large-diameter-backflow-preventer/reduced-pressure",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/pressure-vacuum-breaker-parts",
+        "https://www.zurn.com/products/water-control/additional-solutions/relief-valves",
+        "https://www.zurn.com/products/water-control/additional-solutions/shut-off-valves",
+        "https://www.zurn.com/products/water-control/additional-solutions/water-hammer-arrestors",
+        "https://www.zurn.com/products/water-control/additional-solutions/wye-strainers",
+        "https://www.zurn.com/products/water-control/automatic-control-valves",
+        "https://www.zurn.com/products/water-control/backflow-preventers/custom-retrofit",
+        "https://www.zurn.com/products/water-control/backflow-preventers/large-diameter",
+        "https://www.zurn.com/products/water-control/backflow-preventers/small-diameter",
+        "https://www.zurn.com/products/water-control/pressure-reducing-valves",
+        "https://www.zurn.com/products/water-control/thermostatic-mixing-valves",
+        "https://www.zurn.com/products/water-control/wye-strainers",
+        "https://www.zurn.com/search?q=AquaFlush&f=accessoryType:Diaphragm%20Kits",
+        "https://www.zurn.com/search?q=carbonated",
+        "https://www.zurn.com/search?q=pod"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page with left filter/sort sidebar, product image-card grid and pagination",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-basic",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/carriers-fixture-supports/eastern-style-water-closet",
+        "https://www.zurn.com/products/finish-plumbing/fixtures/lavatories?f=installationMountingType:Wall-mount"
+      ],
+      "coverageGaps": [],
+      "description": "Simple product detail page with image, title, description and resources",
+      "blocks": []
+    },
+    {
+      "name": "product-detail",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/cleanouts/cleanouts/3nl-gasket",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/elevator-threshold/z899-100",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/general-purpose-drainage-exterior/z882",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/general-purpose-drainage-exterior/z886-di",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems/z5001",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems/z5003",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems/z5004",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems/z5005",
+        "https://www.zurn.com/products/finish-plumbing/handwashing-systems/z5006",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6913",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6915",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6920",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6922",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6950",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6951",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6953",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6955",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/gear-driven/zg6956",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/solenoid-driven/z6915-xl",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/solenoid-driven/z6950-xl-im-s",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/solenoid-driven/z6953-xl",
+        "https://www.zurn.com/products/finish-plumbing/sensor-faucets/solenoid-driven/z6957-xl",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-battery-powered/zer6000av-tm",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-battery-powered/zer6003av-tm",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-hydropowered/zer6000av-hyd",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/gear-driven-hydropowered/zer6003av-hyd",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/piston-battery-powered/ztr6200",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/retrofit-kits/zerk-sm",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/retrofit-kits/zerk-u-tm",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6913",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6915",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6920",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6920-w2",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6951",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6953",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6955-w2",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/sensor-faucets/zg6956",
+        "https://www.zurn.com/products/finish-plumbing/smart-connected-products/smart-occupancy-lights/z-light-w1",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6950-fsd",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6950-sd",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6953-fsd",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6953-sd",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6956-fsd",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6956-sd",
+        "https://www.zurn.com/products/finish-plumbing/soap-dispensers/z6957-fsd",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/crimp-rings/qcrxpc",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-hose-bracket",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-prsdl",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-sf-hdl-rk",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/cartridges/59517005",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/miscellaneous/jp1996-pr",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/aerators/p6900-keys",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous/p6900-srk",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous/p6950-xl-c",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous/p6950-xl-el",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous/p6950-xl-y",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/power-supplies-electrical-boxes/p6950-xl-yc",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/control-stop/p6000-d-sd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits/p6000-a-aa-cp",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits/p6000-b-hp",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits/p6000-c30",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits/p6000-h",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits/p6003-a-aa-cp",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits/p6003-h",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/sweat-solder-kits/p6000-ybyc",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/sweat-solder-kits/p6003-ybyc",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-het-df-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-het-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-het-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-hyd-cap",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-hyd-shdkit",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-hyd-sl",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-one-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-one-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-ws1-df-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-ws1-df-hyd-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-ws1-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6000-l-ws1-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6003-l-ews-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6003-l-ews-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6003-l-ulf-hyd-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6003-l-ws1-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/per6003-l-ws1-w2",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/specialty-lavatories-service-sinks/jp1996-sdl",
+        "https://www.zurn.com/products/water-control/pressure-reducing-valves/500xl3",
+        "https://www.zurn.com/products/water-control/pressure-reducing-valves/600xl3",
+        "https://www.zurn.com/products/water-control/pressure-reducing-valves/625xl3",
+        "https://www.zurn.com/products/water-control/pressure-reducing-valves/zcsm-rp"
+      ],
+      "coverageGaps": [],
+      "description": "Product detail page with product image, title, description, feature bullets and a dark resources download band",
+      "blocks": [
+        {
+          "name": "breadcrumb-product",
+          "instances": [
+            ".lk-breadcrumbs"
+          ]
+        },
+        {
+          "name": "columns-product",
+          "instances": [
+            "#PDPGrid"
+          ]
+        },
+        {
+          "name": "download-resources",
+          "instances": [
+            ".ze-resources-listing",
+            ".ze-resources"
+          ]
+        }
+      ],
+      "representativeUrl": "https://www.zurn.com/products/drainage-interceptors/cleanouts/cleanouts/3nl-gasket",
+      "sections": [
+        {
+          "id": "s1",
+          "name": "breadcrumb",
+          "selector": [
+            ".lk-breadcrumbs"
+          ],
+          "style": null,
+          "blocks": [
+            "breadcrumb-product"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s2",
+          "name": "product-detail-grid",
+          "selector": [
+            "#PDPGrid"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-product"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s3",
+          "name": "resources",
+          "selector": [
+            ".ze-resources"
+          ],
+          "style": "dark",
+          "blocks": [
+            "download-resources"
+          ],
+          "defaultContent": []
+        }
+      ]
+    },
+    {
+      "name": "product-detail-single",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/hydrants-and-water-hammer-arrestors/hyd-rk-z1330-c33-c"
+      ],
+      "coverageGaps": [],
+      "description": "Single product detail page with image, title and specifications",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-parts",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/light-commercial/grze-ext-assy",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-hose",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-nhg",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/body-assembly-mounting/p6950-xl-h",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/body-assembly-mounting/p6950-xl-s-im-1",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/body-assembly-mounting/p6955-xl-s-1",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/control-stop/p6000-d42",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/diaphragm-kits/per6000-e-hyd",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/covers-and-repair-kits/perk6203-fa",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/tail-piece-repair-kits/p6000-k",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/miscellaneous/p6000-fa"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-parts browse page with filter sidebar and product card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-filtered",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/dual-outlet",
+        "https://www.zurn.com/products/pex/residential-fire-safety/ul1821-non-barrier-tubing",
+        "https://www.zurn.com/products/repair-parts/building-drainage/hydrants",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/aerators",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/cartridges",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/manual/miscellaneous",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/cover-plates",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/power-supplies-electrical-boxes",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-connections-and-spud-coupling-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/flush-tube-and-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/power-supplies-electrical-boxes",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/sensor-actuator-assembly",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/sensor/parts-by-category/tail-piece-repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering/repair-kits",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering/temp-gard-iii",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass/strainers-po-plugs-offsets",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/large-diameter-backflow-preventer/reduced-pressure-detector-assembly",
+        "https://www.zurn.com/products/water-control/additional-solutions/tools",
+        "https://www.zurn.com/products/water-control/backflow-preventers/connected-backflow",
+        "https://www.zurn.com/products/water-control/thermal-expansion"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page with application filter sidebar and a small product card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-secondary",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/roof-drains/green-roof-drain",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/chemical-processing",
+        "https://www.zurn.com/products/drainage-interceptors/trench-drain-systems/linear-trench-drain/decorative",
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves/retrofit-kits",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/manifolds/quickport-whole-house-preassembled-manifold/preassembled-without-valves",
+        "https://www.zurn.com/products/pex/plumbing/crimp-insert/specialties-supply-tubes",
+        "https://www.zurn.com/products/pex/plumbing/non-barrier-tubing/pex-straight-lengths",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/aerators",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/showering/temp-gard-aqua-panel",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/tubular-brass/trap-stop-supply-protectors",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/single-check-dual-check",
+        "https://www.zurn.com/products/repair-parts/water-safety-control/small-diameter-backflow-preventer/double-check",
+        "https://www.zurn.com/products/water-control/additional-solutions/thermal-expansion",
+        "https://www.zurn.com/products/water-control/backflow-accessories",
+        "https://www.zurn.com/products/water-control/shut-off-valves"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page variant with filter sidebar and product card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-custom",
+      "urls": [
+        "https://www.zurn.com/products/drainage-interceptors/stainless-drains/custom-stainless-drains",
+        "https://www.zurn.com/us/en/innovation-efficiency/filamat-composites-inc.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/hydropower.html",
+        "https://www.zurn.com/us/en/patents.html",
+        "https://www.zurn.com/us/en/resources/approvals-and-certifications.html",
+        "https://www.zurn.com/us/en/resources/material-bank.html",
+        "https://www.zurn.com/us/en/resources/technical-resources.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/cleanouts.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/floor-drains.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/floor-drains/finishes.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/roof-drains.html",
+        "https://www.zurn.com/us/en/support/custom-drains.html"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page for custom/configurable products with filter sidebar and card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-short",
+      "urls": [
+        "https://www.zurn.com/products/finish-plumbing/sensor-flush-valves",
+        "https://www.zurn.com/products/fire-protection"
+      ],
+      "coverageGaps": [],
+      "description": "Short product browse page with sort control and a two-item product grid",
+      "blocks": []
+    },
+    {
+      "name": "product-listing-showers",
+      "urls": [
+        "https://www.zurn.com/products/finish-plumbing/showers",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category",
+        "https://www.zurn.com/products/water-control/backflow-preventers?f=backflowPreventersValveSize:1/8%22%20to%202%22",
+        "https://www.zurn.com/products/water-control/backflow-preventers?f=backflowPreventersValveSize:2-1/2%22%20to%2012%22"
+      ],
+      "coverageGaps": [],
+      "description": "Product browse page with filter sidebar and a small product card grid",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/building-drainage/hydrants/hyd-rk-z1321-cxl"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page with image, title, description and resources",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-two",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-hh",
+        "https://www.zurn.com/products/repair-parts/building-drainage/light-commercial/jp1996-pvc-drn-assy"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page variant with image, title and resources",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-mounting",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/body-assembly-mounting/p6915-xl-1"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for mounting components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-spout",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/body-assembly-mounting/p6955-xl-spout"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for spout components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-misc",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous/p6900-mt-1-xl",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/miscellaneous/p6900-mv-7"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for miscellaneous components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-power",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/power-supplies-electrical-boxes/p6900-cwb-1",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/power-supplies-electrical-boxes/p6950-xl-b-l",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/control-stop/p6000-c32-cp"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for electrical/power components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-power-dc",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/faucets/sensor/parts-by-category/power-supplies-electrical-boxes/p6950-xl-dc"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for power-supply components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-controlstop",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/control-stop/p6000-vc",
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/tail-piece-repair-kits/p6000-j1"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for control-stop components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-repairkit",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/flush-valves/manual/parts-by-category/tail-piece-repair-kits/p6000-c31"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for repair-kit components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "product-detail-part-lavatory",
+      "urls": [
+        "https://www.zurn.com/products/repair-parts/finish-plumbing/specialty-lavatories-service-sinks/jp1996-mh"
+      ],
+      "coverageGaps": [],
+      "description": "Repair-part detail page for lavatory/service-sink components with image and description",
+      "blocks": []
+    },
+    {
+      "name": "tool-form",
+      "urls": [
+        "https://www.zurn.com/tools/300ar-form",
+        "https://www.zurn.com/tools/green-turtle-info-hub",
+        "https://www.zurn.com/tools/options-specials?productNumber=Z-100&type=options",
+        "https://www.zurn.com/tools/options-specials?productNumber=Z-1996&type=options",
+        "https://www.zurn.com/tools/options-specials?productNumber=Z-882&type=options",
+        "https://www.zurn.com/tools/options-specials?productNumber=Z100-FLOFORCE&type=options"
+      ],
+      "coverageGaps": [],
+      "description": "Interactive tool page with a multi-section input form and generate/reset actions",
+      "blocks": []
+    },
+    {
+      "name": "component-sampler-index",
+      "urls": [
+        "https://www.zurn.com/us/en/components-sampler.html",
+        "https://www.zurn.com/us/en/components-sampler/accordion.html",
+        "https://www.zurn.com/us/en/components-sampler/calls-to-action.html",
+        "https://www.zurn.com/us/en/components-sampler/carousel.html",
+        "https://www.zurn.com/us/en/components-sampler/carousel/dynamic-carousel.html",
+        "https://www.zurn.com/us/en/components-sampler/carousel/thumbnail.html",
+        "https://www.zurn.com/us/en/components-sampler/container.html",
+        "https://www.zurn.com/us/en/components-sampler/dialog-container.html",
+        "https://www.zurn.com/us/en/components-sampler/embed.html",
+        "https://www.zurn.com/us/en/components-sampler/image.html",
+        "https://www.zurn.com/us/en/components-sampler/media-text.html",
+        "https://www.zurn.com/us/en/components-sampler/tabs.html",
+        "https://www.zurn.com/us/en/components-sampler/teaser.html",
+        "https://www.zurn.com/us/en/cookie-information.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/smartpro-jpg-plumbing-mechanical.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive.html",
+        "https://www.zurn.com/us/en/news-media/press-releases.html",
+        "https://www.zurn.com/us/en/resources/specification/express-spec.html",
+        "https://www.zurn.com/us/en/resources/specification/health-care.html",
+        "https://www.zurn.com/us/en/resources/specification/spec-library.html"
+      ],
+      "coverageGaps": [],
+      "description": "Component demo index page with a grid of labeled component preview cards",
+      "blocks": []
+    },
+    {
+      "name": "component-sampler-image",
+      "urls": [
+        "https://www.zurn.com/us/en/components-sampler/image/core-v3.html"
+      ],
+      "coverageGaps": [],
+      "description": "Component sampler demo page for an image component variant",
+      "blocks": []
+    },
+    {
+      "name": "component-sampler-demo",
+      "urls": [
+        "https://www.zurn.com/us/en/components-sampler/image/image-custom-styles.html",
+        "https://www.zurn.com/us/en/components-sampler/text/quotes.html",
+        "https://www.zurn.com/us/en/nav-footer/contact-us.html",
+        "https://www.zurn.com/us/en/nav/resources/calculators.html",
+        "https://www.zurn.com/us/en/nav/resources/miscellaneous.html",
+        "https://www.zurn.com/us/en/nav/resources/resources.html",
+        "https://www.zurn.com/us/en/nav/resources/specifications.html",
+        "https://www.zurn.com/us/en/nav/support-zone/countries/usa.html"
+      ],
+      "coverageGaps": [],
+      "description": "Component sampler demo page showing a single component variant",
+      "blocks": []
+    },
+    {
+      "name": "component-sampler-separator",
+      "urls": [
+        "https://www.zurn.com/us/en/components-sampler/separator-rules.html"
+      ],
+      "coverageGaps": [],
+      "description": "Component sampler demo page for a separator-rules component variant",
+      "blocks": []
+    },
+    {
+      "name": "component-sampler-text",
+      "urls": [
+        "https://www.zurn.com/us/en/components-sampler/text.html",
+        "https://www.zurn.com/us/en/sitemap.html"
+      ],
+      "coverageGaps": [],
+      "description": "Component sampler demo page for a text component variant",
+      "blocks": []
+    },
+    {
+      "name": "component-sampler-title",
+      "urls": [
+        "https://www.zurn.com/us/en/components-sampler/title.html"
+      ],
+      "coverageGaps": [],
+      "description": "Component sampler demo page for a title component variant",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-bim",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/bim-innovation.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing landing page with hero and content sections",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-goblue",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/go-blue.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing landing page with hero and content sections",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-plumbpro",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/plumbpro.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/smart-products.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/total-restroom-solutions.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing campaign landing page with hero and media-text sections",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/plumbsmart/connected-backflow-preventers.html",
+        "https://www.zurn.com/us/en/innovation-efficiency/touchless-solutions.html",
+        "https://www.zurn.com/us/en/markets.html",
+        "https://www.zurn.com/us/en/markets/commercial.html",
+        "https://www.zurn.com/us/en/markets/higher-education.html",
+        "https://www.zurn.com/us/en/news-media.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories.html",
+        "https://www.zurn.com/us/en/news-media/press-kits.html",
+        "https://www.zurn.com/us/en/resources/continuing-education-courses.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing campaign landing page with hero, alternating media-text rows, CTA blocks and a product carousel",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-faucets",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/plumbsmart/connected-faucets.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing campaign landing page with hero and alternating media-text content",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-flushvalves",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/plumbsmart/connected-flush-valves.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing campaign landing page with hero and media-text content sections",
+      "blocks": []
+    },
+    {
+      "name": "campaign-landing-setup",
+      "urls": [
+        "https://www.zurn.com/us/en/innovation-efficiency/plumbsmart/how-to-get-set-up.html"
+      ],
+      "coverageGaps": [],
+      "description": "Marketing campaign/how-to landing page with hero and step content",
+      "blocks": []
+    },
+    {
+      "name": "maintenance-page",
+      "urls": [
+        "https://www.zurn.com/us/en/maintenance.html"
+      ],
+      "coverageGaps": [],
+      "description": "Maintenance/utility page with minimal content",
+      "blocks": []
+    },
+    {
+      "name": "market-solution",
+      "urls": [
+        "https://www.zurn.com/us/en/markets/k12education.html"
+      ],
+      "coverageGaps": [],
+      "description": "Vertical-market landing page with full-width hero, stat callouts, alternating color content bands, icon feature row, tabbed audience content and a contact form",
+      "blocks": []
+    },
+    {
+      "name": "customer-success-story-d",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/att-stadium.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/baylor-scott-white.html"
+      ],
+      "coverageGaps": [],
+      "description": "Case-study page variant with hero image and article sections",
+      "blocks": []
+    },
+    {
+      "name": "customer-success-story-c",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/beacon-for-the-bay-chase-center.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/fort-worth-isd.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/sprinklermatic-zurn-bring-education-to-fire-protection.html"
+      ],
+      "coverageGaps": [],
+      "description": "Case-study page variant with hero image and article body",
+      "blocks": []
+    },
+    {
+      "name": "customer-success-story",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/board-of-health-hospitality-testimonial.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/expansion-pex-case-study.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/higher-education-testimonial.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/quick-service-testimonial.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/retail-grocery-testimonial.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/touchless-donations-fulfillment.html"
+      ],
+      "coverageGaps": [],
+      "description": "Case-study page with hero image, sectioned article body, related-story cards and a CTA banner",
+      "blocks": []
+    },
+    {
+      "name": "customer-success-story-b",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/brewing-company-installs-impactful-zurn-drains.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/florida-restaurant-waste-efficiency-zurn.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/polk-mechanical-zurn-cast-iron-drains.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/ptr-mechanical-customer-story.html",
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/restaurant-impactfully-implements-zurn-interceptor.html"
+      ],
+      "coverageGaps": [],
+      "description": "Case-study page variant with hero image, article body and related-story cards",
+      "blocks": []
+    },
+    {
+      "name": "customer-success-story-e",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/customer-success-stories/caltech-saves-gallons-water-conservation.html"
+      ],
+      "coverageGaps": [],
+      "description": "Single case-study page with hero image and article body",
+      "blocks": []
+    },
+    {
+      "name": "press-release",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/water-expert-lauds-zurn-advancements-innovation-efficiency.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-california-education-campaign-promotes-conservation.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-celebrates-earth-day-sustainability.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-donation-american-cancer-society.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-ecovantage-water-efficiency-cleveland-zoo.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-innovates-industry-standard-waste-carrier-system.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-new-crimp-ring-technology-for-better-connections.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-raises-large-donation-for-united-way.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-releases-aqua-fit-sensor-faucet-system.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-water-safety-lead-free-hydrants.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-wilkins-backflow-preventers-denver-universities.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-wilkins-backflow-preventers-stainless-steel-struts.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2011-2015/zurn-wilkins-brings-automatic-control-valves-to-market.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/new-fire-protection-products-added-portfolio.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/us-engineering-saves-time-labor-with-zurn-lean-construction.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/vision-awards-winners-announced.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-acquires-just-manufacturing.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-acquires-stainless-drains-company.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-adds-zshield-floor-drain-barrier-trap-seal-repertoire.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-agrees-to-acquire-hadrian.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-ambassador-aspe-young-professionals-2017.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-awarded-national-preferred-partner-david-weekley-homes.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-builds-smart-products-portfolio.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-completes-pex-portfolio-new-solution.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-contributes-local-water-appreciation-day.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-dedicates-training-center-longtime-employee.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-donates-hygienic-product-combat-covid.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-expands-california-service-center-operation.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-expands-connected-backflow-preventer-portfolio.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-expands-connected-product-portfolio.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-finishes-another-successful-year-of-philanthropy.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-headquarters-earns-leed-gold-certification.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-innovates-new-interceptor-separator.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-installs-solar-plant-paso-robles-california.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-introduces-industry-first-elevator-trench-drain-system.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-invited-to-attend-united-nations-sustainability.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-launches-complete-line-fire-protection.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-lean-construction-studies-competitors.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-makes-an-impact-at-aspe.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-new-basin-designs-sundara.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-partners-with-trax-analytics.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-partnership-aspe-young-professionals.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-releases-additions-ez1-portfolio.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-releases-sundara-hand-washing-system.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-relocates-large-service-center-norcross-georgia.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-unveils-ez1-floor-drain-system.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-water-efficiency-commitment-toilet-offerings.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-water-efficiency-recognized-white-house-government-report.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-wilkins-automatic-control-valves.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-wilkins-backflow-preventers-win-usc-approval.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-wilkins-releases-smart-backflow-preventer.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-wilkins-stainless-steel-backflow-preventer.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-world-plumbing-day-2016.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/ez-flush-sensor-retrofit-kit-released.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-combine.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-launches-new-backflow-preventer.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-launches-new-top-mount-flush-valves.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-launches-siphonic-roof-drains.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-releases-wilkins-pressure-reducing-valves.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-expands-partnership-stone-drew-ashe-jone.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-expands-partnership-with-bwa-south.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-launches-total-restroom-solutions-sustainability.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-plumbsmart-platform-now-fully-patented.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-releases-floforce-roof-drains.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-releases-new-features-to-inspec.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-releases-pressure-reducing-plumbing-valve.html"
+      ],
+      "coverageGaps": [],
+      "description": "Press-release article page with headline, contact-info sidebar and long body copy",
+      "blocks": []
+    },
+    {
+      "name": "press-release-recent",
+      "urls": [
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-american-institute-architcts-sundara.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-bim-content-available-unifi-connect.html",
+        "https://www.zurn.com/us/en/news-media/press-releases-archive/2016-2020/zurn-releases-ez-gear-sensor-flush-valves-retrofits.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/wilkins-975xl3vn-n-pattern.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-adds-hydro-x-power-technology-sensor.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-complete-merger.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-elkay-introduces-new-ligature-resistant-floor-drains.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-expands-pod-drain-solutions-with-new-pod-pro-h-top.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-launches-6-inch-ductile-iron-frame-trench-drain-system.html",
+        "https://www.zurn.com/us/en/news-media/press-releases/zurn-wilkins-releases-new-pressure-reducing-valves-625xl3-sizes.html"
+      ],
+      "coverageGaps": [],
+      "description": "Press-release article page variant with headline and body copy",
+      "blocks": []
+    },
+    {
+      "name": "resources-hub",
+      "urls": [
+        "https://www.zurn.com/us/en/resources.html"
+      ],
+      "coverageGaps": [],
+      "description": "Resources hub page with full-width hero, in-page section nav and multiple icon-card grids grouped by section",
+      "blocks": []
+    },
+    {
+      "name": "resource-update",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/inspec-update.html"
+      ],
+      "coverageGaps": [],
+      "description": "Resource/update content page with title and body copy",
+      "blocks": []
+    },
+    {
+      "name": "legal-text-page",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/prop-65.html"
+      ],
+      "coverageGaps": [],
+      "description": "Legal/informational text page with title and long body copy",
+      "blocks": []
+    },
+    {
+      "name": "resources-repair-parts",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/replacement-repair-parts.html"
+      ],
+      "coverageGaps": [],
+      "description": "Resource landing page with hero and icon-card grid",
+      "blocks": []
+    },
+    {
+      "name": "specification-landing",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/specification.html"
+      ],
+      "coverageGaps": [],
+      "description": "Specification landing page with title and content links",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource-carriers",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/carriers.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page with title and resource link list",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/grease-interceptors.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/lint-interceptors.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/sani-flor-receptors.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/solids-interceptors.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/stainless-steel-drains.html",
+        "https://www.zurn.com/us/en/resources/wilkins-conversion-charts.html",
+        "https://www.zurn.com/us/en/resources/zurn-wilkins-conversion-charts.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page with title, product image and a list of anchored resource links",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource-hair",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/hair-interceptors.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page with title and resource link list",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource-hydrants",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/hydrants.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page with title and resource link list",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource-b",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/oil-sand-sediment-interceptors.html",
+        "https://www.zurn.com/us/en/resources/technical-resources/water-hammer-arrestors.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page variant with title, image and resource link list",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource-traps",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/traps-primers-backwater-valves.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page with title and resource link list",
+      "blocks": []
+    },
+    {
+      "name": "technical-resource-trench",
+      "urls": [
+        "https://www.zurn.com/us/en/resources/technical-resources/trench-drains.html"
+      ],
+      "coverageGaps": [],
+      "description": "Technical-resource page with title and resource link list",
+      "blocks": []
+    },
+    {
+      "name": "support-page",
+      "urls": [
+        "https://www.zurn.com/us/en/support.html"
+      ],
+      "coverageGaps": [],
+      "description": "Support landing page with title and content sections",
+      "blocks": []
+    },
+    {
+      "name": "legal-terms-page",
+      "urls": [
+        "https://www.zurn.com/us/en/terms-and-conditions.html"
+      ],
+      "coverageGaps": [],
+      "description": "Legal terms-and-conditions text page with title and body copy",
+      "blocks": []
+    },
+    {
+      "name": "promo-page",
+      "urls": [
+        "https://www.zurn.com/us/en/wilkins/timeismoney.html"
+      ],
+      "coverageGaps": [],
+      "description": "Standalone promotional page with hero and content",
+      "blocks": []
+    }
+  ],
+  "metadata": {
+    "projectType": "xwalk"
+  }
+}

@@ -1,0 +1,147 @@
+/* columns-product — product-detail two-column layout.
+ * Values extracted from source #PDPGrid computed styles:
+ * https://www.zurn.com/products/drainage-interceptors/cleanouts/cleanouts/3nl-gasket
+ * See migration-work/columns-product-extracted.css for the raw measurements.
+ *
+ * Source layout: 2-col grid (image left / info right) on desktop, stacked on mobile.
+ * Selectors target both the JS-added classes and positional children so the
+ * layout holds even when the image cell is an <a>/<picture> the decorator
+ * could not classify.
+ */
+
+/* ---- Row: mobile-first single column ---- */
+.columns-product > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Image cell renders first on mobile. */
+.columns-product > div > div:first-child {
+  order: 0;
+}
+
+.columns-product > div > div:last-child {
+  order: 1;
+}
+
+/* ---- Image cell: framed product image ---- */
+/* stylelint-disable no-descending-specificity */
+.columns-product > div > div:first-child img,
+.columns-product .columns-product-img-col img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border: 2px solid #f4f4f5;
+  border-radius: 4px;
+}
+/* stylelint-enable no-descending-specificity */
+
+.columns-product picture {
+  display: block;
+}
+
+/* ---- Info cell typography (mirrors source computed values) ---- */
+.columns-product h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--text-color, #000);
+  margin: 0 0 16px;
+}
+
+.columns-product h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--heading-primary-color, #30475a);
+  margin: 0 0 9.6px;
+}
+
+.columns-product p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-color, #000);
+  margin: 0 0 9.6px;
+}
+
+/* ---- "Where to Buy" CTA: gradient pill (EDS decorates <p><a> -> a.button) ---- */
+main .columns-product .button-container {
+  margin: 8px 0 16px;
+}
+
+main .columns-product a.button:any-link {
+  display: inline-block;
+  padding: 14.4px 17.6px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(0deg, rgb(3 104 173) 0%, rgb(0 180 151) 100%);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Remove the global chevron ::after on this CTA. */
+main .columns-product a.button:any-link::after {
+  content: none;
+}
+
+main .columns-product a.button:hover,
+main .columns-product a.button:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+/* ---- Selling-features list with green check icons ---- */
+.columns-product ul {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.columns-product ul li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 9.6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-color, #000);
+}
+
+/* Green check icon (inline SVG, fill #00B497) preceding each feature. */
+.columns-product ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 23px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' fill='none'%3E%3Cpath fill='%2300B497' d='M12 2.333c5.523 0 10 4.477 10 10s-4.477 10-10 10-10-4.477-10-10 4.477-10 10-10Zm3.535 6.381-4.95 4.95-2.12-2.12a1 1 0 0 0-1.415 1.413l2.758 2.758a1.1 1.1 0 0 0 1.556 0l5.586-5.586a1 1 0 0 0-1.415-1.415Z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ---- Desktop: two columns side by side ---- */
+@media (width >= 900px) {
+  .columns-product > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 57.6px;
+    align-items: start;
+  }
+
+  .columns-product > div > div {
+    order: unset;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "xwalk",
+  "sites": {
+    "zurnelkay-eds-ue": {
+      "previewOrg": "oharris69",
+      "previewSite": "zurnelkay-eds-ue",
+      "contentHostUrl": "author-p7954-e2285674.adobeaemcloud.com",
+      "aemSitePath": "/content/zurn",
+      "aemAssetsFolderPath": "/content/dam/zurn",
+      "aemSiteName": "zurn",
+      "aemSiteTitle": "Zurn",
+      "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
+      "botProtected": true
+    }
+  },
+  "features": [
+    "site-planning"
+  ]
+}

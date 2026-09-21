@@ -11,38 +11,46 @@
       "accordion",
       "action-button",
       "button",
+      "button",
+      "breadcrumb-product",
       "cards",
       "carousel",
       "columns",
+      "columns-product",
       "contentfragment",
       "download-list",
+      "download-resources",
+      "dm-asset",
       "dm-template",
-      "dynamic-media-image",
-      "dynamic-media-video",
+      "embed-adaptive-form",
+      "find-a-doctor",
+      "forex",
+      "form",
       "fragment",
       "hero",
       "image",
       "promotion",
       "quote",
+      "search",
+      "separator",
+      "tabs",
       "teaser",
       "text",
       "title",
       "title-block",
-      "video",
-      "search",
-      "separator",
-      "tabs",
-      "form",
-      "forex",
-      "embed-adaptive-form",
-      "find-a-doctor",
-      "fragment-list"
+      "video"
     ]
   },
   {
     "id": "accordion",
     "components": [
       "accordion-item"
+    ]
+  },
+  {
+    "id": "breadcrumb-product",
+    "components": [
+      "breadcrumb-product-crumb"
     ]
   },
   {
@@ -58,6 +66,25 @@
     ]
   },
   {
+    "id": "columns-product",
+    "components": [
+      "columns-product-column"
+    ]
+  },
+  {
+    "id": "columns-product-column",
+    "components": [
+      "button",
+      "dm-asset",
+      "dm-template",
+      "image",
+      "text",
+      "title",
+      "title-block",
+      "video"
+    ]
+  },
+  {
     "id": "columns",
     "components": [
       "column"
@@ -67,18 +94,19 @@
     "id": "column",
     "components": [
       "button",
+      "dm-asset",
+      "dm-template",
       "image",
       "text",
       "title",
       "title-block",
-      "video",
-      "dynamic-media-video"
+      "video"
     ]
   },
   {
-    "id": "tabs",
+    "id": "download-resources",
     "components": [
-      "tabs-item"
+      "download-resources-item"
     ]
   },
   {
@@ -109,6 +137,12 @@
       "tnc",
       "wizard",
       "range"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
     ]
   }
 ]
