@@ -1,0 +1,86 @@
+/*
+ * hero-market — full-bleed vertical-market hero.
+ * Design migrated from https://www.zurn.ca/fr/markets/k12education.html
+ * (.lkteaser.teaser-default). Values extracted via getComputedStyle.
+ *
+ * Source: fixed-height (600px) full-bleed background photo with white
+ * heading + subheading anchored bottom-left.
+ */
+
+/* Full-bleed override: EDS wraps the block in .section > div (max-width 1200px,
+   padding, side margins). The source hero spans the full viewport width. */
+.hero-market-wrapper {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hero-market {
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* text anchored to the bottom of the photo */
+  min-height: 400px;
+  overflow: hidden;
+}
+
+/* Background photo fills the block. */
+.hero-market .hero-market-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-market .hero-market-bg picture,
+.hero-market .hero-market-bg img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay text box, bottom-left, above the photo. */
+.hero-market .hero-market-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 32px 24px;
+  color: #fff;
+}
+
+.hero-market .hero-market-content h1 {
+  margin: 0 0 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.1;
+}
+
+.hero-market .hero-market-content h3 {
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.1;
+}
+
+@media (width >= 900px) {
+  .hero-market {
+    min-height: 600px;
+  }
+
+  .hero-market .hero-market-content {
+    padding: 44px 86px;
+  }
+
+  .hero-market .hero-market-content h1 {
+    margin: 0 0 4px;
+    font-size: 44px;
+    line-height: 48.4px;
+  }
+
+  .hero-market .hero-market-content h3 {
+    font-size: 30.8px;
+    line-height: 33.88px;
+  }
+}

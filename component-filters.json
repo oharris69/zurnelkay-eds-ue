@@ -17,6 +17,9 @@
       "carousel",
       "columns",
       "columns-product",
+      "cards-icon",
+      "columns-band",
+      "columns-stat",
       "contentfragment",
       "download-list",
       "download-resources",
@@ -28,12 +31,14 @@
       "form",
       "fragment",
       "hero",
+      "hero-market",
       "image",
       "promotion",
       "quote",
       "search",
       "separator",
       "tabs",
+      "tabs-audience",
       "teaser",
       "text",
       "title",
@@ -54,6 +59,12 @@
     ]
   },
   {
+    "id": "cards-icon",
+    "components": [
+      "cards-icon-card"
+    ]
+  },
+  {
     "id": "cards",
     "components": [
       "card"
@@ -63,6 +74,12 @@
     "id": "carousel",
     "components": [
       "card"
+    ]
+  },
+  {
+    "id": "columns-band",
+    "components": [
+      "columns-band-cell"
     ]
   },
   {
@@ -82,6 +99,12 @@
       "title",
       "title-block",
       "video"
+    ]
+  },
+  {
+    "id": "columns-stat",
+    "components": [
+      "columns-stat-cell"
     ]
   },
   {
@@ -137,6 +160,12 @@
       "tnc",
       "wizard",
       "range"
+    ]
+  },
+  {
+    "id": "tabs-audience",
+    "components": [
+      "tabs-audience-item"
     ]
   },
   {

@@ -1,0 +1,79 @@
+/* cards-icon — four-up icon feature row.
+   Design migrated from https://www.zurn.ca/fr/markets/k12education.html
+   ("Wellness and Sustainably Inspired" benefits row).
+   Values from source getComputedStyle @ 1440px. */
+
+.cards-icon .cards-icon-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1000px;          /* source container w-max-1000 */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px 0;
+}
+
+.cards-icon .cards-icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 14.4px;          /* source cmp-mediatext horizontal padding */
+}
+
+/* icon — source renders a 100x100 line icon */
+.cards-icon .cards-icon-icon {
+  margin: 0 0 8px;
+}
+
+.cards-icon .cards-icon-icon p {
+  margin: 0;
+}
+
+.cards-icon .cards-icon-icon picture {
+  display: inline-block;
+}
+
+.cards-icon .cards-icon-icon img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* title — source h5 is mixed-case slate, NOT the uppercase/700 global main h5 */
+.cards-icon .cards-icon-body h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--heading-primary-color, #30475a);
+  text-transform: none;
+  margin: 20px 0 10px;
+}
+
+/* description paragraphs */
+.cards-icon .cards-icon-body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;           /* 28.8px */
+  color: var(--text-color, #000);
+  margin: 0 0 9.6px;
+  text-align: center;
+}
+
+/* Learn More link — inherits the global inline text-link reset;
+   keep it centered within the card body */
+.cards-icon .cards-icon-body .button-container {
+  text-align: center;
+}
+
+@media (width >= 600px) {
+  .cards-icon .cards-icon-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 900px) {
+  .cards-icon .cards-icon-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

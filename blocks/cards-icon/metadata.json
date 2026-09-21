@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-icon",
+  "baseBlock": "cards",
+  "visualCharacteristics": "A four-up row of centered feature cards on a light background, each with an icon, a bold title, and a short description. Collapses to two-up then one-up on narrower viewports.",
+  "contentPattern": "One row per card; each card cell holds an icon image and a text cell (title + description).",
+  "usage": "Vertical-market landing pages — icon feature/benefit row.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["cards-icon"]
+}

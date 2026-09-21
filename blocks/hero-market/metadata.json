@@ -1,0 +1,10 @@
+{
+  "variantName": "hero-market",
+  "baseBlock": "hero",
+  "visualCharacteristics": "Full-bleed background photo spanning the viewport width with white overlay text (heading + subheading) anchored bottom-left. Tall on desktop, shorter on mobile.",
+  "contentPattern": "One image cell (full-bleed background) and one text cell (heading + subheading paragraph). No CTA in the base instance.",
+  "usage": "Vertical-market landing pages (markets/*) — top hero band.",
+  "canonicalModel": "standalone",
+  "options": [],
+  "memberVariantIds": ["hero-market"]
+}

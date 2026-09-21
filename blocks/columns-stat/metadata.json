@@ -1,0 +1,10 @@
+{
+  "variantName": "columns-stat",
+  "baseBlock": "columns",
+  "visualCharacteristics": "Two-column stat callout on a light background, centered constrained width: a large emphasized figure with a supporting label beside a paragraph of supporting copy. Stacks and centers on mobile.",
+  "contentPattern": "One row, two cells: figure/label cell + supporting-paragraph cell.",
+  "usage": "Vertical-market landing pages — headline statistic band.",
+  "canonicalModel": "standalone",
+  "options": [],
+  "memberVariantIds": ["columns-stat"]
+}

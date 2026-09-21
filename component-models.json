@@ -305,6 +305,36 @@
     ]
   },
   {
+    "id": "cards-icon",
+    "fields": []
+  },
+  {
+    "id": "cards-icon-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Icon",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "card",
     "fields": [
       {
@@ -418,6 +448,39 @@
     ]
   },
   {
+    "id": "columns-band",
+    "fields": [
+      {
+        "component": "select",
+        "name": "classes",
+        "label": "Image Side",
+        "value": "",
+        "options": [
+          {
+            "name": "Image Left (default)",
+            "value": ""
+          },
+          {
+            "name": "Image Right",
+            "value": "image-right"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "columns-band-cell",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "columns-product",
     "fields": [
       {
@@ -433,6 +496,22 @@
         "name": "rows",
         "value": "",
         "label": "Rows"
+      }
+    ]
+  },
+  {
+    "id": "columns-stat",
+    "fields": []
+  },
+  {
+    "id": "columns-stat-cell",
+    "fields": [
+      {
+        "component": "richtext",
+        "name": "content",
+        "value": "",
+        "label": "Content",
+        "valueType": "string"
       }
     ]
   },
@@ -6246,6 +6325,32 @@
     ]
   },
   {
+    "id": "hero-market",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Overlay Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "hero",
     "fields": [
       {
@@ -6543,6 +6648,42 @@
         "name": "excludeAssetPaths",
         "label": "Excluded Asset Paths",
         "description": "Comma- or newline-separated DAM paths to exclude from asset search results. Any asset whose path starts with one of these prefixes is dropped. Example: /content/dam/my-site/internal, /content/dam/my-site/drafts"
+      }
+    ]
+  },
+  {
+    "id": "tabs-audience",
+    "fields": []
+  },
+  {
+    "id": "tabs-audience-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Tab Label"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Panel Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Panel Text",
+        "valueType": "string"
       }
     ]
   },

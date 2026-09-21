@@ -1,0 +1,75 @@
+/* columns-stat — stat callout on a light background.
+ * Source: zurn.ca /fr/markets/k12education (.lkcontainer.w-max-1000.flex-just-center)
+ * Left cell: bold blue figure + supporting label (centered).
+ * Right cell: a supporting blockquote with a teal left rule (left-aligned).
+ * Values extracted from source computed styles. Do not replace with generic defaults.
+ */
+
+.columns-stat {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 28.8px; /* 2vw at source width */
+}
+
+/* Row: constrained, centered stack on mobile. */
+.columns-stat .columns-stat-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Figure cell — centered label copy. */
+.columns-stat .columns-stat-figure {
+  padding: 10px;
+  text-align: center;
+}
+
+.columns-stat .columns-stat-figure p {
+  font-size: 20.8px;
+  line-height: 1.8;
+  color: rgb(0 0 0);
+  margin: 0 0 12.48px;
+}
+
+/* The leading figure — bold Zurn blue (source uses <b> -> EDS <strong>). */
+.columns-stat .columns-stat-figure strong {
+  font-weight: 700;
+  color: var(--brand-blue, #005995);
+}
+
+/* Body cell — supporting blockquote with teal left rule. */
+.columns-stat .columns-stat-body blockquote {
+  margin: 20.8px 40px;
+  padding: 8px 16px;
+  border-left: 2px solid rgb(0 180 151);
+  font-style: normal;
+}
+
+.columns-stat .columns-stat-body blockquote,
+.columns-stat .columns-stat-body p {
+  font-size: 20.8px;
+  line-height: 1.8;
+  color: rgb(0 0 0);
+}
+
+.columns-stat .columns-stat-body blockquote p {
+  margin: 0;
+}
+
+@media (width >= 900px) {
+  .columns-stat .columns-stat-row {
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .columns-stat .columns-stat-figure {
+    flex: 0 1 auto;
+  }
+
+  .columns-stat .columns-stat-body {
+    flex: 0 1 auto;
+    text-align: left;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variantName": "tabs-audience",
+  "baseBlock": "tabs",
+  "visualCharacteristics": "Centered horizontal text-tab navigation with underline on the active tab; each panel shows an image beside a heading and paragraph. Panels stack image-over-text on mobile.",
+  "contentPattern": "One row per tab: first cell is the tab label, remaining cells are the panel (image + heading + paragraph).",
+  "usage": "Vertical-market landing pages — tabbed audience content (Students & Staff, District Administration, etc.).",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["tabs-audience"]
+}

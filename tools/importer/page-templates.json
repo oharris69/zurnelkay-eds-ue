@@ -1016,11 +1016,214 @@
     {
       "name": "market-solution",
       "urls": [
-        "https://www.zurn.com/us/en/markets/k12education.html"
+        "https://www.zurn.com/us/en/markets/k12education.html",
+        "https://www.zurn.ca/fr/markets/k12education.html",
+        "https://www.zurn.ca/fr/markets/higher-education.html",
+        "https://www.zurn.ca/fr/markets/healthcare.html",
+        "https://www.zurn.ca/fr/markets/commercial.html",
+        "https://www.zurn.ca/fr/markets/waterworks.html",
+        "https://www.zurn.ca/fr/markets/food-beverage.html",
+        "https://www.zurn.ca/fr/markets/food-service.html",
+        "https://www.zurn.ca/fr/markets/fire-protection.html",
+        "https://www.zurn.ca/fr/markets/government.html",
+        "https://www.zurn.ca/fr/markets/hospitality.html",
+        "https://www.zurn.ca/fr/markets/retail.html"
       ],
       "coverageGaps": [],
       "description": "Vertical-market landing page with full-width hero, stat callouts, alternating color content bands, icon feature row, tabbed audience content and a contact form",
-      "blocks": []
+      "blocks": [
+        {
+          "name": "hero-market",
+          "instances": [
+            ".lkteaser.teaser-default"
+          ]
+        },
+        {
+          "name": "columns-stat",
+          "instances": [
+            ".lkcontainer.w-max-1000.flex-just-center"
+          ]
+        },
+        {
+          "name": "columns-band",
+          "instances": [
+            ".teaserv2.core-scheme-feature"
+          ]
+        },
+        {
+          "name": "cards-icon",
+          "instances": [
+            ".teaserv2.core-scheme-blacktext.teaser-text-center"
+          ]
+        },
+        {
+          "name": "tabs-audience",
+          "instances": [
+            ".lktabs"
+          ]
+        },
+        {
+          "name": "fragment-brands",
+          "instances": [
+            ".cmp-experiencefragment--brands"
+          ]
+        },
+        {
+          "name": "form",
+          "instances": [
+            ".lkembed.hs-neutral"
+          ]
+        }
+      ],
+      "representativeUrl": "https://www.zurn.ca/fr/markets/k12education.html",
+      "sections": [
+        {
+          "id": "s1",
+          "name": "breadcrumb",
+          "selector": [
+            ".lkbreadcrumb"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "s2",
+          "name": "hero",
+          "selector": [
+            ".lkteaser.teaser-default"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-market"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s3",
+          "name": "stat-callout",
+          "selector": [
+            ".lkcontainer.w-max-1000.flex-just-center"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-stat"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s4",
+          "name": "band-tco",
+          "selector": [
+            ".cmp-experiencefragment--tco-callout"
+          ],
+          "style": "dark",
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "s5",
+          "name": "band-hygiene",
+          "selector": [
+            ".teaserv2.image-right"
+          ],
+          "style": "dark",
+          "blocks": [
+            "columns-band"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s6",
+          "name": "band-smart",
+          "selector": [
+            ".teaserv2.image-left"
+          ],
+          "style": "accent",
+          "blocks": [
+            "columns-band"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s7",
+          "name": "brands",
+          "selector": [
+            ".cmp-experiencefragment--brands"
+          ],
+          "style": "dark",
+          "blocks": [
+            "fragment-brands"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s8",
+          "name": "wellness-intro",
+          "selector": [
+            ".cmp-experiencefragment--sustainability-section"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "s9",
+          "name": "icon-features",
+          "selector": [
+            ".teaserv2.core-scheme-blacktext.teaser-text-center"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-icon"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s10",
+          "name": "sustainability-stats",
+          "selector": [
+            ".teaserv2.larger-fonts"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "s11",
+          "name": "upgrades-title",
+          "selector": [
+            ".lktitle.title-center"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": []
+        },
+        {
+          "id": "s12",
+          "name": "audience-tabs",
+          "selector": [
+            ".lktabs"
+          ],
+          "style": null,
+          "blocks": [
+            "tabs-audience"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s13",
+          "name": "contact-form",
+          "selector": [
+            ".lkembed.hs-neutral"
+          ],
+          "style": "light-grey",
+          "blocks": [
+            "form"
+          ],
+          "defaultContent": []
+        }
+      ]
     },
     {
       "name": "customer-success-story-d",

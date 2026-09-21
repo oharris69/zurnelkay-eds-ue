@@ -1,0 +1,131 @@
+/*
+ * columns-band — full-bleed colored media/text band.
+ * Design migrated from https://www.zurn.ca/fr/markets/k12education.html
+ * (.teaserv2.core-scheme-feature). Values extracted via getComputedStyle.
+ *
+ * Source layout: flex row, image half (600px square, object-fit cover) +
+ * text half (fills, padding 57.6px, vertically centered). Band is 600px tall.
+ * Two color variants come from the section: .section.dark (#253746 dark blue)
+ * and .section.accent (#01846c teal). White text throughout.
+ * Options: .image-right (default is image-left).
+ */
+
+/* Full-bleed override: EDS wraps the block in .section > div (max-width 1200px,
+   padding, side margins). The source band spans the full viewport width. */
+.columns-band-wrapper {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove the section vertical margins so stacked bands sit flush like source. */
+.section.columns-band-container {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fallback color if no section variant supplies one (base rule first so the
+   section-scoped overrides below have ascending specificity). */
+.columns-band {
+  background-color: #253746;
+  color: #fff;
+}
+
+/* Band-level color (source teaser colors, override section defaults). */
+.section.dark .columns-band {
+  background-color: #253746; /* source dark blue */
+  color: #fff;
+}
+
+.section.accent .columns-band {
+  background-color: #01846c; /* source teal */
+  color: #fff;
+}
+
+/* Row: mobile-first stacked (image on top, text below). */
+.columns-band .columns-band-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Media half. */
+.columns-band .columns-band-media {
+  order: 0;
+}
+
+.columns-band .columns-band-media picture,
+.columns-band .columns-band-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Text half. */
+.columns-band .columns-band-text {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 24px;
+}
+
+.columns-band .columns-band-text h2 {
+  margin: 0 0 10.56px;
+  color: #fff;
+  font-family: "Gotham Zurn", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.columns-band .columns-band-text p {
+  margin: 0 0 10.56px;
+  color: #fff;
+  font-family: "Gotham Zurn", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 17.6px;
+  line-height: 31.68px;
+}
+
+.columns-band .columns-band-text p:last-child {
+  margin-bottom: 0;
+}
+
+.columns-band .columns-band-text strong {
+  font-weight: 700;
+}
+
+@media (width >= 900px) {
+  .columns-band .columns-band-row {
+    flex-direction: row;
+    align-items: stretch;
+    min-height: 600px;
+  }
+
+  /* Image half: source is 600px of 1440 (~41.7%); text fills the rest. */
+  .columns-band .columns-band-media {
+    flex: 0 0 41.67%;
+  }
+
+  .columns-band .columns-band-text {
+    flex: 1 1 58.33%;
+    padding: 57.6px;
+  }
+
+  .columns-band .columns-band-text h2 {
+    font-size: 35.2px;
+    line-height: 42.24px;
+  }
+
+  /* Option: image on the right (default is image left). */
+  .columns-band.image-right .columns-band-media {
+    order: 1;
+  }
+
+  .columns-band.image-right .columns-band-text {
+    order: 0;
+  }
+}

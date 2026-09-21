@@ -1,0 +1,10 @@
+{
+  "variantName": "columns-band",
+  "baseBlock": "columns",
+  "visualCharacteristics": "Full-bleed colored band split into an image half and a text half (heading, paragraph, optional bold subtext and CTA). Image sits left or right per option; background color (dark blue / teal) supplied by the section. Stacks image-over-text on mobile.",
+  "contentPattern": "One row, two cells: image cell + text cell. Option class 'image-right' swaps sides.",
+  "usage": "Vertical-market landing pages — alternating feature bands.",
+  "canonicalModel": "standalone",
+  "options": ["image-right"],
+  "memberVariantIds": ["columns-band"]
+}

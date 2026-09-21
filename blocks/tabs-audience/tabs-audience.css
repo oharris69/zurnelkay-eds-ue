@@ -1,0 +1,118 @@
+/*
+ * tabs-audience — centered horizontal text-tab navigation with
+ * image + heading + paragraph panels.
+ * Values extracted from source computed styles (.cmp-tabs) on
+ * https://www.zurn.ca/fr/markets/k12education.html
+ */
+
+/* ---- Tablist (centered horizontal tabs, full-width baseline) ---- */
+.tabs-audience .tabs-audience-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  border-bottom: 1px solid rgb(0 0 0 / 12%);
+}
+
+/* ---- Tab button ---- */
+.tabs-audience .tabs-audience-tab {
+  padding: 15.84px 19.36px;
+  margin-bottom: -1px; /* overlap the list baseline */
+  background: none;
+  border: none;
+  border-bottom: 4px solid transparent;
+  font-family: "Gotham Zurn", arial, helvetica, sans-serif;
+  font-size: 17.6px;
+  line-height: 31.68px;
+  font-weight: 400;
+  text-align: center;
+  white-space: normal;
+  color: rgb(55 56 58); /* #37383a inactive */
+  cursor: pointer;
+}
+
+.tabs-audience .tabs-audience-tab:hover {
+  color: rgb(0 89 149);
+}
+
+/* Active tab: Zurn blue text + 4px blue underline */
+.tabs-audience .tabs-audience-tab[aria-selected="true"] {
+  color: rgb(0 89 149); /* #005995 Zurn blue */
+  font-weight: 500;
+  border-bottom-color: rgb(0 89 149);
+}
+
+/* ---- Panel ---- */
+.tabs-audience .tabs-audience-panel {
+  padding: 10px;
+}
+
+.tabs-audience .tabs-audience-panel[hidden] {
+  display: none;
+}
+
+/* Media: full-width on mobile */
+.tabs-audience .tabs-audience-panel-media {
+  margin-bottom: 20px;
+}
+
+.tabs-audience .tabs-audience-panel-media img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Panel heading — override global uppercase/700 h5 */
+.tabs-audience .tabs-audience-panel-body h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: none;
+  color: rgb(48 71 90); /* #30475a slate */
+  margin: 0 0 10px;
+}
+
+/* Panel paragraph — override global line-height 1.8 */
+.tabs-audience .tabs-audience-panel-body p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: rgb(0 0 0);
+  margin: 0 0 9.6px;
+}
+
+/* ---- Desktop: image floats left, text wraps beside ---- */
+@media (width >= 900px) {
+  .tabs-audience .tabs-audience-panel::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .tabs-audience .tabs-audience-panel-media {
+    float: left;
+    width: 400px;
+    max-width: 50%;
+    margin-bottom: 0;
+  }
+
+  .tabs-audience .tabs-audience-panel-media img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+  }
+
+  .tabs-audience .tabs-audience-panel-body {
+    padding-left: 28px;
+    overflow: hidden; /* establish new block-formatting context beside float */
+  }
+
+  .tabs-audience .tabs-audience-panel-body h5 {
+    margin-top: 20px;
+  }
+}
