@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir, cp, readdir } from 'fs/promises';
 import path from 'path';
 
 const NAME = 'zurn-market-solution';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const GROUP = 'zurn';
 // FR market pages live under the French language master.
 const SITE_ROOT = '/content/zurn/language-masters/fr';
@@ -13,6 +13,15 @@ await mkdir(contentDest, { recursive: true });
 // migration-work/jcr-market/fr/markets/... -> jcr_root/.../fr/markets/...
 // (the converted paths are fr/markets/<page>; strip the leading 'fr/' since SITE_ROOT already ends in /fr)
 await cp(path.join('migration-work', 'jcr-market', 'fr', 'markets'), path.join(contentDest, 'markets'), { recursive: true });
+
+// Ship the form field-definition JSON as an nt:file under fr/markets so the
+// franklin.delivery servlet serves it at /fr/markets/market-contact-form.json
+// (the form block on 6 pages fetches this relative sheet). FileVault imports a
+// plain file as nt:file + nt:resource automatically.
+await cp(
+  path.join('content', 'fr', 'markets', 'market-contact-form.json'),
+  path.join(contentDest, 'markets', 'market-contact-form.json'),
+);
 
 const vaultDir = path.join(buildDir, 'META-INF', 'vault');
 await mkdir(vaultDir, { recursive: true });

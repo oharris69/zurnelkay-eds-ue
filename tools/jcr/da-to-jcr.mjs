@@ -124,6 +124,18 @@ function escapeStrayAmpersands(xml) {
   return xml.replace(/&(?!(?:amp|lt|gt|quot|apos|#\d+|#x[0-9a-fA-F]+);)/g, '&amp;');
 }
 
+// helix-md2jcr emits Adobe Forms attributes (fd:version) on form blocks, but its
+// page-template root only declares jcr/nt/cq/sling namespaces — so a page with a
+// form block is invalid JCR ("prefix 'fd' … is not bound") and fails CRX install.
+// If any fd:-prefixed attribute is present and the root doesn't already declare
+// the fd namespace, add xmlns:fd on the <jcr:root> element.
+const FD_NS = 'http://www.adobe.com/aemfd/fd/1.0';
+function ensureFdNamespace(xml) {
+  if (!/\bfd:/.test(xml)) return xml;
+  if (/xmlns:fd=/.test(xml)) return xml;
+  return xml.replace(/<jcr:root\b([^>]*?)>/, `<jcr:root$1 xmlns:fd="${FD_NS}">`);
+}
+
 export async function convertFileToJcr(plainHtmlPath, title, components) {
   const plainHtml = await readFile(plainHtmlPath, 'utf-8');
   const full = `<!DOCTYPE html><html><head><title>${title.replace(/</g, '&lt;')}</title></head><body><main>${plainHtml}</main></body></html>`;
@@ -131,7 +143,7 @@ export async function convertFileToJcr(plainHtmlPath, title, components) {
   const doc = dom.window.document;
   transformMain(doc, components.definition);
   const res = await md2jcr('https://example.com/p', doc, undefined, {}, { components });
-  return escapeStrayAmpersands(res.jcr);
+  return ensureFdNamespace(escapeStrayAmpersands(res.jcr));
 }
 
 // CLI test
