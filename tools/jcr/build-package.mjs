@@ -13,15 +13,17 @@ import { existsSync } from 'fs';
 import path from 'path';
 
 const NAME = 'zurn-product-detail';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const GROUP = 'zurn';
-const SITE_ROOT = '/content/zurn';
+// Site root is the language-masters/en tree (maps to / via the delivery mountpoint),
+// NOT the bare /content/zurn — pages must live inside the site to preview/publish.
+const SITE_ROOT = '/content/zurn/language-masters/en';
 const buildDir = path.join('migration-work', 'dist', `${NAME}-${VERSION}`);
 
-// jcr_root/content/zurn — copy converted pages under it
+// jcr_root/content/zurn/language-masters/en — copy converted pages under it
 const contentDest = path.join(buildDir, 'jcr_root', SITE_ROOT.replace(/^\//, ''));
 await mkdir(contentDest, { recursive: true });
-// copy migration-work/jcr/products -> jcr_root/content/zurn/products
+// copy migration-work/jcr/products -> jcr_root/content/zurn/language-masters/en/products
 await cp(path.join('migration-work', 'jcr', 'products'), path.join(contentDest, 'products'), { recursive: true });
 
 // META-INF/vault

@@ -2,8 +2,9 @@ import archiver from '/home/node/.excat-marketplaces/excat-marketplace/excat/too
 import { createWriteStream } from 'fs';
 import path from 'path';
 
-const buildDir = 'migration-work/dist/zurn-product-detail-1.0.0';
-const outZip = 'migration-work/dist/zurn-product-detail-1.0.0.zip';
+const version = process.argv[2] || '1.0.1';
+const buildDir = `migration-work/dist/zurn-product-detail-${version}`;
+const outZip = `migration-work/dist/zurn-product-detail-${version}.zip`;
 
 await new Promise((resolve, reject) => {
   const output = createWriteStream(outZip);
