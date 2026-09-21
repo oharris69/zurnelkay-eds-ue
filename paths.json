@@ -2,6 +2,8 @@
   "mappings": [
     "/content/zurn/language-masters/en:/",
     "/content/zurn/language-masters/en/:/en/",
+    "/content/zurn/language-masters/fr:/fr",
+    "/content/zurn/language-masters/fr/:/fr/",
     "/content/zurn/configuration:/.helix/config.json",
     "/content/zurn/metadata:/metadata.json",
     "/content/zurn/redirects:/redirects.json",
