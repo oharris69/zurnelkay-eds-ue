@@ -1,0 +1,198 @@
+/* carousel-media — Zurn "Innovation Zurn" split media panel.
+ * Intro text column beside a scrolling media-tile carousel.
+ * Values extracted from https://www.zurn.ca/fr.html (#lkcontainer-92828ff454).
+ * Source sits over a full-bleed dark ocean photo; the migrated section provides
+ * no background, so the block supplies a legible dark (ocean-navy) surface using
+ * the brand dark token and renders intro/tile text in white. */
+
+.carousel-media {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 24px;
+  background-color: var(--dark-color, #1e2f3d);
+  color: var(--text-light, #fff);
+}
+
+/* ---- Intro column ---- */
+.carousel-media .carousel-media-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
+.carousel-media .carousel-media-intro h3 {
+  margin: 0 0 8px;
+  color: var(--text-light, #fff);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.carousel-media .carousel-media-intro p {
+  margin: 0 0 10px;
+  color: var(--text-light, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* CTA "Toute L'Actualité" — solid blue pill, no chevron (source value #0074c8) */
+.carousel-media .carousel-media-intro .button-container {
+  display: block;
+  margin-top: 16px;
+}
+
+.carousel-media .carousel-media-intro a.button:any-link {
+  display: inline-block;
+  padding: 18px 22px;
+  border-radius: 8px;
+  background-color: #0074c8;
+  color: var(--text-light, #fff);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.carousel-media .carousel-media-intro a.button:any-link::after {
+  content: none;
+}
+
+.carousel-media .carousel-media-intro a.button:hover {
+  background-color: #005995;
+  color: var(--text-light, #fff);
+  text-decoration: none;
+}
+
+/* ---- Carousel ---- */
+.carousel-media .carousel-media-carousel {
+  position: relative;
+}
+
+.carousel-media .carousel-media-viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-media .carousel-media-viewport::-webkit-scrollbar { display: none; }
+
+/* Two-row grid that scrolls horizontally (matches source 2x2 tile grid) */
+.carousel-media .carousel-media-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(2, auto);
+  grid-auto-columns: 150px;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---- Tile: image + linked label beneath ---- */
+.carousel-media .carousel-media-tile {
+  scroll-snap-align: start;
+  text-align: center;
+}
+
+.carousel-media .carousel-media-tile img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.carousel-media .carousel-media-tile .button-container {
+  display: block;
+  margin: 6px 0 0;
+}
+
+.carousel-media .carousel-media-tile a.button:any-link {
+  display: inline-block;
+  padding: 4px 0 0;
+  color: var(--text-light, #fff);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.carousel-media .carousel-media-tile a.button:any-link::after {
+  content: none;
+}
+
+.carousel-media .carousel-media-tile a.button:hover {
+  text-decoration: underline;
+}
+
+/* ---- Arrows: transparent side chevrons (source style) ---- */
+.carousel-media .carousel-media-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 40px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  color: var(--text-light, #fff);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.carousel-media .carousel-media-prev { left: -8px; }
+.carousel-media .carousel-media-next { right: -8px; }
+
+.carousel-media .carousel-media-prev::before {
+  content: "\2039";
+  font-size: 44px;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+}
+
+.carousel-media .carousel-media-next::before {
+  content: "\203A";
+  font-size: 44px;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 40%);
+}
+
+/* ---- Desktop: intro column beside carousel ---- */
+@media (width >= 900px) {
+  .carousel-media {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+  }
+
+  .carousel-media .carousel-media-intro {
+    flex: 0 0 42%;
+    align-self: stretch;
+    padding: 48px 43px;
+  }
+
+  .carousel-media .carousel-media-carousel {
+    flex: 1;
+    min-width: 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    padding: 24px 28px;
+  }
+
+  .carousel-media .carousel-media-viewport {
+    width: 100%;
+  }
+
+  .carousel-media .carousel-media-track {
+    grid-auto-columns: 176px;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variantName": "carousel-media",
+  "baseBlock": "carousel",
+  "visualCharacteristics": "Split innovation panel: a left intro column (heading + paragraph + CTA) beside a right horizontally-scrolling carousel of media tiles (product image + label), paged with arrows. Stacks on mobile.",
+  "contentPattern": "First row is the intro (heading/paragraph/CTA); each following row is a media tile (image + label).",
+  "usage": "Homepage — 'Zurn Innovation' media carousel.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["carousel-media"]
+}

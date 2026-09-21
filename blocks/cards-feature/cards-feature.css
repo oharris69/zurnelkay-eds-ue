@@ -1,0 +1,89 @@
+/* cards-feature — Zurn "Dernières Nouvelles de Zurn" three-up feature card grid.
+   Design extracted from https://www.zurn.ca/fr.html (#lkcontainer-d0baf9a111):
+   card bg rgb(244,244,245), 4px radius, 20px inner padding, 50px centered icon,
+   centered slate title, left-aligned body copy. Stacks 1-up on mobile, 3-up >=900px. */
+
+.cards-feature .cards-feature-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.cards-feature .cards-feature-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f5;
+  border-radius: 4px;
+}
+
+.cards-feature .cards-feature-body {
+  padding: 20px;
+}
+
+/* Source ships each card as an empty product-photo column + a content column.
+   The photo column carries no content after import, so collapse it. */
+.cards-feature .cards-feature-body:empty {
+  display: none;
+}
+
+.cards-feature .cards-feature-body img {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  object-fit: contain;
+}
+
+/* Title. */
+.cards-feature .cards-feature-body h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: var(--heading-primary-color, #30475a);
+  text-align: center;
+  margin: 20px 0 6px;
+}
+
+.cards-feature .cards-feature-body h3 a:any-link {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.cards-feature .cards-feature-body h3 a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* Suppress the global Font Awesome chevron appended after links. */
+.cards-feature .cards-feature-body a::after {
+  content: none;
+}
+
+/* Description. */
+.cards-feature .cards-feature-body p {
+  font-size: 17.6px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-color, #000);
+  text-align: left;
+  margin: 0 0 10.56px;
+}
+
+.cards-feature .cards-feature-body p:last-child {
+  margin-bottom: 0;
+}
+
+/* Icon: 50x50, centered above the title (first paragraph of the card body). */
+.cards-feature .cards-feature-body p:first-child {
+  margin: 0;
+  text-align: center;
+}
+
+@media (width >= 900px) {
+  .cards-feature .cards-feature-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

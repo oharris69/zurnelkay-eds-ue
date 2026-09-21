@@ -1,0 +1,10 @@
+{
+  "variantName": "carousel-markets",
+  "baseBlock": "carousel",
+  "visualCharacteristics": "Horizontally scrolling carousel of market cards; each card is an image with a market name, short description, and a 'Voir Les Solutions' link. Shows ~4 cards per view on desktop, paged with arrows.",
+  "contentPattern": "One row per market card: image cell + body cell (name + description + link).",
+  "usage": "Homepage — 'Serving Many Markets' carousel.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["carousel-markets"]
+}

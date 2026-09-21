@@ -305,6 +305,36 @@
     ]
   },
   {
+    "id": "cards-feature",
+    "fields": []
+  },
+  {
+    "id": "cards-feature-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Photo",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
     "id": "cards-icon",
     "fields": []
   },
@@ -371,6 +401,104 @@
             "value": "button-dark"
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": "carousel-hero",
+    "fields": [
+      {
+        "component": "boolean",
+        "name": "autoplay",
+        "label": "Auto-slide",
+        "value": false,
+        "valueType": "boolean"
+      }
+    ]
+  },
+  {
+    "id": "carousel-hero-slide",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Background Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Overlay Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "carousel-markets",
+    "fields": []
+  },
+  {
+    "id": "carousel-markets-card",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "carousel-media",
+    "fields": []
+  },
+  {
+    "id": "carousel-media-tile",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "image",
+        "label": "Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "imageAlt",
+        "label": "Alt",
+        "value": ""
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Label",
+        "valueType": "string"
       }
     ]
   },
@@ -6683,6 +6811,28 @@
         "name": "text",
         "value": "",
         "label": "Panel Text",
+        "valueType": "string"
+      }
+    ]
+  },
+  {
+    "id": "tabs-resource",
+    "fields": []
+  },
+  {
+    "id": "tabs-resource-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "label",
+        "label": "Tab Label"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "value": "",
+        "label": "Cards",
         "valueType": "string"
       }
     ]

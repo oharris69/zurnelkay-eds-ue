@@ -17,36 +17,45 @@
  * which md2* renders to the form block referencing the sheet.
  */
 
-const FORM_EMBED_SELECTOR = '.lkembed.hs-neutral';
-const FORM_JSON = 'market-contact-form.json';
+// Each HubSpot embed variant maps to the pre-built EDS Form JSON sheet that
+// reproduces its fields. Both are tried on every page; a mapping whose selector
+// is absent simply no-ops, so this single transformer serves the
+// market-solution contact form AND the homepage newsletter signup without
+// either pipeline affecting the other.
+const FORM_EMBEDS = [
+  { selector: '.lkembed.hs-neutral', json: 'market-contact-form.json' },
+  { selector: '.lkembed.hs-emailsignup', json: 'newsletter-signup-form.json' },
+];
 
 const TransformHook = { beforeTransform: 'beforeTransform', afterTransform: 'afterTransform' };
 
 export default function transform(hookName, element, payload) {
   if (hookName !== TransformHook.beforeTransform) return;
 
-  const embed = element.querySelector(FORM_EMBED_SELECTOR);
-  if (!embed) return;
-
   const doc = element.ownerDocument || document;
 
-  // Build a form block table: header cell "Form", body cell = link to the JSON sheet.
-  const table = doc.createElement('table');
-  const headRow = doc.createElement('tr');
-  const headCell = doc.createElement('td');
-  headCell.textContent = 'Form';
-  headRow.appendChild(headCell);
-  table.appendChild(headRow);
+  FORM_EMBEDS.forEach(({ selector, json }) => {
+    const embed = element.querySelector(selector);
+    if (!embed) return;
 
-  const bodyRow = doc.createElement('tr');
-  const bodyCell = doc.createElement('td');
-  const link = doc.createElement('a');
-  link.setAttribute('href', FORM_JSON);
-  link.textContent = FORM_JSON;
-  bodyCell.appendChild(link);
-  bodyRow.appendChild(bodyCell);
-  table.appendChild(bodyRow);
+    // Build a form block table: header cell "Form", body cell = link to the JSON sheet.
+    const table = doc.createElement('table');
+    const headRow = doc.createElement('tr');
+    const headCell = doc.createElement('td');
+    headCell.textContent = 'Form';
+    headRow.appendChild(headCell);
+    table.appendChild(headRow);
 
-  // Replace the embed's loose field-label content with the form block table.
-  embed.replaceWith(table);
+    const bodyRow = doc.createElement('tr');
+    const bodyCell = doc.createElement('td');
+    const link = doc.createElement('a');
+    link.setAttribute('href', json);
+    link.textContent = json;
+    bodyCell.appendChild(link);
+    bodyRow.appendChild(bodyCell);
+    table.appendChild(bodyRow);
+
+    // Replace the embed's loose field-label content with the form block table.
+    embed.replaceWith(table);
+  });
 }

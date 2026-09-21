@@ -1,0 +1,215 @@
+/* carousel-hero — full-bleed dark rotating hero banner.
+   Visual values extracted from https://www.zurn.ca/fr.html #bannerCarousel.
+   Structural-CSS-first: colors reference the site design system where they match. */
+
+/* Full-bleed: escape the section max-width wrapper */
+.carousel-hero-wrapper {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.carousel-hero {
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.carousel-hero .carousel-hero-track {
+  position: relative;
+}
+
+.carousel-hero .carousel-hero-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 320px;
+}
+
+.carousel-hero .carousel-hero-slide[hidden] {
+  display: none;
+}
+
+/* Background photo cell (EDS wraps the <img> in a <p>) */
+.carousel-hero .carousel-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.carousel-hero .carousel-hero-bg p {
+  margin: 0;
+  height: 100%;
+}
+
+.carousel-hero .carousel-hero-bg picture,
+.carousel-hero .carousel-hero-bg img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Disable the global picture "shine" hover sweep on the backdrop */
+.carousel-hero .carousel-hero-bg picture::before {
+  content: none;
+}
+
+/* Left-to-right dark scrim so white overlay text stays legible over any photo */
+.carousel-hero .carousel-hero-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(0 0 0 / 65%) 0%, rgb(0 0 0 / 30%) 45%, rgb(0 0 0 / 0%) 75%);
+  z-index: 1;
+}
+
+/* Text overlay — left-aligned white, vertically centred */
+.carousel-hero .carousel-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 620px;
+  padding: 32px 24px 40px 72px;
+  color: #fff;
+}
+
+.carousel-hero .carousel-hero-content h1,
+.carousel-hero .carousel-hero-content h2,
+.carousel-hero .carousel-hero-content h3,
+.carousel-hero .carousel-hero-content h4 {
+  margin: 0 0 9px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.1;
+}
+
+.carousel-hero .carousel-hero-content p {
+  margin: 0 0 9px;
+  color: #fff;
+  font-size: var(--body-font-size-s);
+  line-height: 1.4;
+}
+
+/* CTA — teal→blue gradient pill (overrides the global EDS button reset) */
+.carousel-hero .carousel-hero-content .button-container {
+  display: block;
+  margin: 9px 0 0;
+}
+
+.carousel-hero .carousel-hero-content a.button:any-link {
+  display: inline-block;
+  margin: 0;
+  padding: 16px 19px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(0deg, #0368ad 0%, #00b497 100%);
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  white-space: normal;
+  text-decoration: none;
+}
+
+.carousel-hero .carousel-hero-content a.button:hover,
+.carousel-hero .carousel-hero-content a.button:focus {
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+/* Drop the global Font Awesome chevron appended to links/buttons */
+.carousel-hero .carousel-hero-content a.button::after,
+.carousel-hero .carousel-hero-content a::after {
+  content: none;
+}
+
+/* Arrows */
+.carousel-hero .carousel-hero-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: 1px solid rgb(255 255 255 / 60%);
+  border-radius: 50%;
+  background: rgb(0 0 0 / 30%);
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel-hero .carousel-hero-arrow:hover {
+  background: rgb(0 0 0 / 50%);
+}
+
+.carousel-hero .carousel-hero-prev { left: 16px; }
+.carousel-hero .carousel-hero-next { right: 16px; }
+
+.carousel-hero .carousel-hero-prev::before {
+  content: "\2039";
+  font-size: 28px;
+  line-height: 1;
+}
+
+.carousel-hero .carousel-hero-next::before {
+  content: "\203A";
+  font-size: 28px;
+  line-height: 1;
+}
+
+/* Dots */
+.carousel-hero .carousel-hero-dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-hero .carousel-hero-dot {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 50%);
+  cursor: pointer;
+}
+
+.carousel-hero .carousel-hero-dot[aria-selected="true"] {
+  background: #fff;
+}
+
+@media (width >= 900px) {
+  .carousel-hero .carousel-hero-slide {
+    min-height: 480px;
+  }
+
+  .carousel-hero .carousel-hero-content {
+    max-width: 640px;
+    padding: 48px 100px;
+  }
+
+  .carousel-hero .carousel-hero-content h1,
+  .carousel-hero .carousel-hero-content h2,
+  .carousel-hero .carousel-hero-content h3,
+  .carousel-hero .carousel-hero-content h4 {
+    font-size: 32px;
+  }
+
+  .carousel-hero .carousel-hero-prev { left: 26px; }
+  .carousel-hero .carousel-hero-next { right: 26px; }
+}

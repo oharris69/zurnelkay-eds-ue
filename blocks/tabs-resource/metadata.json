@@ -1,0 +1,10 @@
+{
+  "variantName": "tabs-resource",
+  "baseBlock": "tabs",
+  "visualCharacteristics": "Centered text-tab switcher; each panel holds a responsive grid of resource-link cards (icon + linked title + short description). Grid is four-up on desktop, collapsing on smaller viewports.",
+  "contentPattern": "One row per tab: first cell is the tab label; each remaining cell is a resource-link card.",
+  "usage": "Homepage — 'Zurn Resources' tabbed link grids.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["tabs-resource"]
+}

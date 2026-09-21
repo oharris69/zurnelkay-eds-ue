@@ -3,6 +3,7 @@
     {
       "name": "homepage",
       "urls": [
+        "https://www.zurn.ca/fr.html",
         "https://www.zurn.com/",
         "https://www.zurn.com/tools/carrier-code-book",
         "https://www.zurn.com/tools/interceptor-sizing-tool",
@@ -44,7 +45,191 @@
       ],
       "coverageGaps": [],
       "description": "Landing page with hero carousel, feature-card grid, tabbed resource links, markets carousel and full-width media sections",
-      "blocks": []
+      "blocks": [
+        {
+          "name": "carousel-hero",
+          "instances": [
+            "#bannerCarousel"
+          ]
+        },
+        {
+          "name": "cards-feature",
+          "instances": [
+            "#lkcontainer-d0baf9a111"
+          ]
+        },
+        {
+          "name": "tabs-resource",
+          "instances": [
+            "#ZurnResources"
+          ]
+        },
+        {
+          "name": "carousel-markets",
+          "instances": [
+            "#vMarkets"
+          ]
+        },
+        {
+          "name": "carousel-media",
+          "instances": [
+            "#zurnInnovationEfficiencyProducts"
+          ]
+        },
+        {
+          "name": "columns-band",
+          "instances": [
+            "#whyZurn"
+          ]
+        },
+        {
+          "name": "form",
+          "instances": [
+            "#container-9dddb5c103"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "s1",
+          "name": "hero-carousel",
+          "selector": [
+            "#bannerCarousel"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s2",
+          "name": "latest-intro",
+          "selector": [
+            "#lktext-51c5ff3e5e"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#lktext-51c5ff3e5e"
+          ]
+        },
+        {
+          "id": "s3",
+          "name": "latest-cards",
+          "selector": [
+            "#lkcontainer-d0baf9a111"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s4",
+          "name": "resources-intro",
+          "selector": [
+            "#lktext-afe1cfcb1a"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#lktext-afe1cfcb1a"
+          ]
+        },
+        {
+          "id": "s5",
+          "name": "resources-tabs",
+          "selector": [
+            "#ZurnResources"
+          ],
+          "style": null,
+          "blocks": [
+            "tabs-resource"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s6",
+          "name": "markets-carousel",
+          "selector": [
+            "#lkcontainer-04137134ae"
+          ],
+          "style": "grey",
+          "blocks": [
+            "carousel-markets"
+          ],
+          "defaultContent": [
+            "#lkcontainer-04137134ae .cmp-text",
+            "#lkcontainer-04137134ae .lkcta"
+          ]
+        },
+        {
+          "id": "s7",
+          "name": "innovation-media",
+          "selector": [
+            "#lkcontainer-92828ff454"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-media"
+          ],
+          "defaultContent": [
+            "#lkcontainer-92828ff454 .cmp-title",
+            "#lkcontainer-92828ff454 .text",
+            ".lkcta"
+          ]
+        },
+        {
+          "id": "s8",
+          "name": "where-to-buy-heading",
+          "selector": [
+            "#lktitle-cmp-root-container_533156717-lktitle"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#lktitle-cmp-root-container_533156717-lktitle"
+          ]
+        },
+        {
+          "id": "s9",
+          "name": "rep-locator",
+          "selector": [
+            "#lkcontainer-e8a1ecb7fa"
+          ],
+          "style": null,
+          "blocks": [],
+          "defaultContent": [
+            "#lkcontainer-e8a1ecb7fa"
+          ]
+        },
+        {
+          "id": "s10",
+          "name": "why-zurn-band",
+          "selector": [
+            "#whyZurn"
+          ],
+          "style": null,
+          "blocks": [
+            "columns-band"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "s11",
+          "name": "newsletter",
+          "selector": [
+            "#container-9dddb5c103"
+          ],
+          "style": "dark",
+          "blocks": [
+            "form"
+          ],
+          "defaultContent": []
+        }
+      ]
     },
     {
       "name": "file-cabinet-page",

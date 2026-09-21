@@ -23,10 +23,16 @@ export default function parse(element, { document }) {
     element.querySelector('.cmp-teaser__content img, img');
 
   // --- Text: heading + copy + optional CTA (richtext) ---
-  const desc = element.querySelector('.cmp-teaser__description') || element;
+  // Two source layouts share this variant:
+  //   (a) market-solution teasers: a .cmp-teaser__description holds the copy and
+  //       a .cmp-teaser__action-link holds the CTA;
+  //   (b) the /fr homepage "Pourquoi Zurn?" band: a .cmp-text block holds the
+  //       heading + copy and a separate .lkcta .cmp-button holds the CTA.
+  // Prefer the teaser description; fall back to the text block, else the element.
+  const desc = element.querySelector('.cmp-teaser__description, .cmp-text') || element;
   const textEls = Array.from(desc.querySelectorAll(':scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > h5, :scope > p'))
     .filter((el) => el.textContent.trim());
-  const cta = element.querySelector('.cmp-teaser__action-link, .cmp-teaser__action-container a[href]');
+  const cta = element.querySelector('.cmp-teaser__action-link, .cmp-teaser__action-container a[href], .lkcta a[href], a.cmp-button[href]');
   if (cta) textEls.push(cta);
 
   // Empty-block guard.

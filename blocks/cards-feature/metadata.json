@@ -1,0 +1,10 @@
+{
+  "variantName": "cards-feature",
+  "baseBlock": "cards",
+  "visualCharacteristics": "Three-up grid of feature cards on a light background; each card has an icon, a bold title, a description paragraph, and a photo below. Collapses to one column on mobile.",
+  "contentPattern": "One row per card; cells: body (icon + title + description) and a photo.",
+  "usage": "Homepage — 'Latest From Zurn' feature-card grid.",
+  "canonicalModel": "container",
+  "options": [],
+  "memberVariantIds": ["cards-feature"]
+}

@@ -1,0 +1,120 @@
+/* tabs-resource — Zurn "Ressources Zurn" tabbed resource switcher.
+   Structural-CSS-first; brand color pulled from --brand-blue (#005995). */
+
+/* ---- Tab bar (role=tablist) ---- */
+.tabs-resource .tabs-resource-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;
+  margin: 0 0 32px;
+  padding: 0;
+  border-bottom: 1px solid rgb(0 0 0 / 12%);
+}
+
+.tabs-resource .tabs-resource-tab {
+  position: relative;
+  margin: 0;
+  padding: 16px 20px;
+  background: none;
+  border: none;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #37383a;
+  white-space: normal;
+  text-align: center;
+  cursor: pointer;
+}
+
+.tabs-resource .tabs-resource-tab:hover {
+  color: var(--brand-blue, #005995);
+}
+
+.tabs-resource .tabs-resource-tab[aria-selected="true"] {
+  color: var(--brand-blue, #005995);
+  font-weight: 500;
+}
+
+/* 4px gradient underline indicator under the active tab */
+.tabs-resource .tabs-resource-tab[aria-selected="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 4px;
+  background-image: linear-gradient(270deg, #0368ad 0%, #00b497 100%);
+}
+
+/* ---- Panels ---- */
+.tabs-resource .tabs-resource-panel[hidden] { display: none; }
+
+/* Source links carry no trailing chevron; suppress the global a::after glyph */
+.tabs-resource .tabs-resource-card a::after {
+  content: none;
+}
+
+/* ---- Resource card grid ---- */
+.tabs-resource .tabs-resource-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.tabs-resource .tabs-resource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: var(--brand-light-color, #f4f4f5);
+}
+
+.tabs-resource .tabs-resource-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+/* Description (generic paragraph) */
+.tabs-resource .tabs-resource-card p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-color, #000);
+}
+
+/* Linked title link */
+.tabs-resource .tabs-resource-card h6 a {
+  color: var(--brand-blue, #005995);
+  text-decoration: underline;
+  white-space: normal;
+}
+
+/* Linked title */
+.tabs-resource .tabs-resource-card h6 {
+  margin: 20px 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: none;
+}
+
+/* Icon/image link sits at the top, centered */
+.tabs-resource .tabs-resource-card p:first-child {
+  margin: 0;
+  text-align: center;
+}
+
+.tabs-resource .tabs-resource-card p:first-child a {
+  display: block;
+  text-align: center;
+}
+
+@media (width >= 600px) {
+  .tabs-resource .tabs-resource-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (width >= 900px) {
+  .tabs-resource .tabs-resource-grid { grid-template-columns: repeat(3, 1fr); }
+}

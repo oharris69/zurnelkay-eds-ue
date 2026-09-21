@@ -1,0 +1,142 @@
+/* carousel-markets — horizontal market-card carousel.
+   Design extracted from https://www.zurn.ca/fr.html #vMarkets (source computed styles).
+   Structural layout first; colors/type reference styles.css brand vars where they match. */
+
+.carousel-markets {
+  --carousel-markets-gap: 16px;
+
+  position: relative;
+  padding: 0 44px; /* gutters for the edge arrows */
+}
+
+/* light-grey band behind the whole markets section (source: rgb(244,244,245)).
+   Scoped to sections that actually contain this block, so it is self-contained. */
+main .section:has(.carousel-markets.block) {
+  background-color: #f4f4f5;
+}
+
+.carousel-markets .carousel-markets-viewport {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.carousel-markets .carousel-markets-viewport::-webkit-scrollbar { display: none; }
+
+.carousel-markets .carousel-markets-track {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--carousel-markets-gap);
+}
+
+/* one card + peek on mobile */
+.carousel-markets .carousel-markets-card {
+  flex: 0 0 82%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+/* image on top */
+.carousel-markets .carousel-markets-image { margin: 0; }
+
+.carousel-markets .carousel-markets-image picture {
+  display: block;
+  width: 100%;
+}
+
+.carousel-markets .carousel-markets-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* card text */
+.carousel-markets .carousel-markets-body {
+  padding-top: 16px;
+}
+
+.carousel-markets .carousel-markets-body h4 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #000;
+}
+
+.carousel-markets .carousel-markets-body h4 a:any-link {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.carousel-markets .carousel-markets-body h4 a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+/* source titles are plain links — suppress the global Font Awesome chevron */
+.carousel-markets .carousel-markets-body h4 a::after,
+.carousel-markets .carousel-markets-body h4 a:hover::after {
+  content: none;
+}
+
+.carousel-markets .carousel-markets-body p {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.carousel-markets .carousel-markets-body p strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* arrows — blue chevrons at the outer edges, no button chrome (source #0074c8) */
+.carousel-markets .carousel-markets-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cpath d='M64.05 190c-2.87 0-5.56-1.21-7.57-3.41-3.97-4.35-3.97-11.43 0-15.78L121.15 100 56.48 29.19c-3.97-4.35-3.97-11.43 0-15.78 2.01-2.2 4.69-3.41 7.57-3.41s5.56 1.21 7.57 3.41l71.88 78.7c1.94 2.12 3.01 4.93 3.01 7.89s-1.07 5.77-3.01 7.89l-71.88 78.7c-2.01 2.2-4.69 3.41-7.57 3.41' style='fill:%230074c8'/%3E%3C/svg%3E");
+  font-size: 0;
+  cursor: pointer;
+}
+
+.carousel-markets .carousel-markets-arrow::before { content: none; }
+
+.carousel-markets .carousel-markets-prev {
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.carousel-markets .carousel-markets-next { right: 0; }
+
+@media (width >= 600px) {
+  /* two cards on tablet */
+  .carousel-markets .carousel-markets-card {
+    flex-basis: calc((100% - var(--carousel-markets-gap)) / 2);
+  }
+}
+
+@media (width >= 900px) {
+  /* four cards on desktop */
+  .carousel-markets .carousel-markets-card {
+    flex-basis: calc((100% - (3 * var(--carousel-markets-gap))) / 4);
+  }
+}
