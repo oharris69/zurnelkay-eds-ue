@@ -23,7 +23,7 @@
   --brand-nav-slate: #1b2a34; /* nav menu label slate */
   --brand-nav-accent-start: #00b497; /* teal accent */
   --brand-nav-accent-end: #0368ad; /* blue accent */
-  --brand-brandbar-color: #042a37; /* dark charcoal top brand bar */
+  --brand-brandbar-color: #3f3f3f; /* neutral charcoal grey top brand bar (matches zurn.com) */
 
   /* header/nav: white bar with slate labels (consumed by styles.css defaults) */
   --brand-nav-background-color: #fff;
