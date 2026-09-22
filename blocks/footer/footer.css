@@ -56,6 +56,23 @@ footer .footer .default-content-wrapper > p:first-child strong {
   font-weight: 700;
 }
 
+/* real Zurn footer logo (replaces the text brand line) */
+footer .footer .footer-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+footer .footer .footer-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+/* the logo link must not inherit the footer link (grey/underline) styling */
+footer .footer .footer-logo-link:hover {
+  opacity: 0.9;
+}
+
 /* link list — horizontal, wrapping row (not a raw bullet list) */
 footer .footer ul {
   display: flex;
