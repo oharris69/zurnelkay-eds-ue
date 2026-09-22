@@ -65,6 +65,30 @@ function applyBrandLogo(nav) {
   wrapper.append(link);
 }
 
+/**
+ * Build a Zurn-style search box (rounded "Search Zurn" pill + magnifier).
+ * Visual/demo only — submitting does nothing (no results page wired). Inserted
+ * into the .nav-tools area so it sits in the logo/utility row like zurn.com.
+ */
+function buildSearchBox() {
+  const form = document.createElement('form');
+  form.className = 'nav-search';
+  form.setAttribute('role', 'search');
+  // inert for the demo — prevent navigation on submit
+  form.addEventListener('submit', (e) => e.preventDefault());
+  const input = document.createElement('input');
+  input.type = 'search';
+  input.className = 'nav-search-input';
+  input.setAttribute('placeholder', 'Search Zurn');
+  input.setAttribute('aria-label', 'Search Zurn');
+  const btn = document.createElement('button');
+  btn.type = 'submit';
+  btn.className = 'nav-search-btn';
+  btn.setAttribute('aria-label', 'Search');
+  form.append(input, btn);
+  return form;
+}
+
 function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
@@ -502,6 +526,8 @@ export default async function decorate(block) {
 
   const navTools = nav.querySelector('.nav-tools');
   if (navTools) {
+    // Zurn-style search box (visual/demo) — leads the tools area.
+    navTools.insertBefore(buildSearchBox(), navTools.firstChild);
     const contentWrapper = nav.querySelector('.nav-tools > div[class = "default-content-wrapper"]');
     // Language switcher (minimal UI)
     try {

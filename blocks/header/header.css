@@ -18,6 +18,55 @@ header .nav-wrapper {
   box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
 }
 
+/* Zurn-style search box in the tools area */
+header nav .nav-search {
+  display: flex;
+  align-items: center;
+  flex: 0 1 320px;
+  height: 40px;
+  border: 1px solid #cfd4d8;
+  border-radius: 22px;
+  background: #fff;
+  overflow: hidden;
+}
+
+header nav .nav-search-input {
+  flex: 1 1 auto;
+  height: 100%;
+  border: 0;
+  outline: none;
+  padding: 0 8px 0 18px;
+  font-size: 15px;
+  color: var(--brand-nav-slate);
+  background: transparent;
+}
+
+header nav .nav-search-input::placeholder {
+  color: #6b7378;
+}
+
+header nav .nav-search-btn {
+  flex: 0 0 auto;
+  width: 44px;
+  height: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .nav-search-btn::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: var(--brand-blue-bright, #0075c9);
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l5 5 1.5-1.5-5-5zm-6 0a4.5 4.5 0 1 1 0-9 4.5 4.5 0 0 1 0 9z"/></svg>') no-repeat center / contain;
+}
+
 /* dark brand bar (sibling-brand logos), sits above the main white header */
 header .nav-brand-bar {
   background-color: var(--brand-brandbar-color, #042a37);
@@ -85,6 +134,11 @@ header .nav-brand-logo {
 
   header .nav-brand-bar-logo img {
     height: 15px;
+  }
+
+  /* hide the search box on mobile to keep the hamburger row clean */
+  header nav .nav-search {
+    display: none;
   }
 
   header .nav-brand-logo {

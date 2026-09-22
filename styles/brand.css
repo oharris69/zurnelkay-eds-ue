@@ -26,7 +26,7 @@
   --brand-brandbar-color: #3f3f3f; /* neutral charcoal grey top brand bar (matches zurn.com) */
 
   /* header/nav: white bar with slate labels (consumed by styles.css defaults) */
-  --brand-nav-background-color: #fff;
+  --brand-nav-background-color: #f6f6f6; /* subtle light-grey logo/search row (like zurn.com) */
   --brand-nav-text-color: #1b2a34;
 
   /* fonts */
