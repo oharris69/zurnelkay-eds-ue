@@ -2,7 +2,7 @@ import { writeFile, mkdir, cp } from 'fs/promises';
 import path from 'path';
 
 const NAME = 'zurn-about-us';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const GROUP = 'zurn';
 // The existing About Us page under the English language master (delivery /en/about-us).
 const PAGE_ROOT = '/content/zurn/language-masters/en/about-us';
