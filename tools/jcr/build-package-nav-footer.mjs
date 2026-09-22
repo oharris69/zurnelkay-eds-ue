@@ -2,7 +2,7 @@ import { writeFile, mkdir, cp } from 'fs/promises';
 import path from 'path';
 
 const NAME = 'zurn-nav-footer';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const GROUP = 'zurn';
 const LM = '/content/zurn/language-masters';
 const buildDir = path.join('migration-work', 'dist', `${NAME}-${VERSION}`);
@@ -30,7 +30,7 @@ await mkdir(vaultDir, { recursive: true });
 await writeFile(path.join(vaultDir, 'filter.xml'),
 `<?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-${filters.map((r) => `  <filter root="${r}"/>`).join('\n')}
+${filters.map((r) => `  <filter root="${r}" mode="replace"/>`).join('\n')}
 </workspaceFilter>
 `, 'utf-8');
 

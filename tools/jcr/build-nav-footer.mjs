@@ -37,17 +37,22 @@ function textNode(name, html) {
 function buttonNode(name, link, linkText) {
   return `        <${name} sling:resourceType="${RT.button}" jcr:primaryType="nt:unstructured" link="${xmlEscape(link)}" linkText="${xmlEscape(linkText)}"/>`;
 }
-function section(children) {
-  return `      <section sling:resourceType="${RT.section}" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
+// JCR sibling nodes MUST have unique names — three <section> siblings collapse
+// to just the last on import. Name them section, section_1, section_2, matching
+// the franklin serialization convention.
+function section(children, index) {
+  const name = index === 0 ? 'section' : `section_${index}`;
+  return `      <${name} sling:resourceType="${RT.section}" jcr:primaryType="nt:unstructured" model="section" modelFields="[name,style]">
 ${children.join('\n')}
-      </section>`;
+      </${name}>`;
 }
 function page(title, sections) {
+  const sectionXml = sections.map((children, i) => section(children, i)).join('\n');
   return `<?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0" jcr:primaryType="cq:Page">
   <jcr:content cq:template="/libs/core/franklin/templates/page" sling:resourceType="${RT.page}" jcr:primaryType="cq:PageContent" jcr:title="${xmlEscape(title)}" modelFields="[jcr:title,jcr:pagetitle,jcr:description,cq:tags,theme,pageName,pageCategory]">
     <root jcr:primaryType="nt:unstructured" sling:resourceType="${RT.root}">
-${sections.join('\n')}
+${sectionXml}
     </root>
   </jcr:content>
 </jcr:root>
@@ -140,16 +145,16 @@ const FOOTER = {
 for (const lang of ['en', 'fr']) {
   const nav = NAV[lang];
   const navXml = page(nav.title, [
-    section([buttonNode('button', nav.brand.link, nav.brand.text)]),
-    section([textNode('text', nav.menu)]),
-    section([buttonNode('button', nav.tools.link, nav.tools.text)]),
+    [buttonNode('button', nav.brand.link, nav.brand.text)],
+    [textNode('text', nav.menu)],
+    [buttonNode('button', nav.tools.link, nav.tools.text)],
   ]);
   const navPath = path.join(OUT, lang, 'nav', '.content.xml');
   await mkdir(path.dirname(navPath), { recursive: true });
   await writeFile(navPath, navXml, 'utf-8');
 
   const ft = FOOTER[lang];
-  const footerXml = page(ft.title, [section([textNode('text', ft.html)])]);
+  const footerXml = page(ft.title, [[textNode('text', ft.html)]]);
   const footerPath = path.join(OUT, lang, 'footer', '.content.xml');
   await mkdir(path.dirname(footerPath), { recursive: true });
   await writeFile(footerPath, footerXml, 'utf-8');
