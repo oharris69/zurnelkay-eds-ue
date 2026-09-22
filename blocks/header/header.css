@@ -18,6 +18,67 @@ header .nav-wrapper {
   box-shadow: 0 1px 4px rgb(0 0 0 / 8%);
 }
 
+/* dark brand bar (sibling-brand logos), sits above the main white header */
+header .nav-brand-bar {
+  background-color: var(--brand-brandbar-color, #042a37);
+  width: 100%;
+}
+
+header .nav-brand-bar-inner {
+  max-width: 1264px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+}
+
+header .nav-brand-bar-logo {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.9;
+  transition: opacity 0.15s ease;
+}
+
+header .nav-brand-bar-logo:hover {
+  opacity: 1;
+}
+
+header .nav-brand-bar-logo img {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+/* real ZURN logo in the white header row (replaces the text brand link) */
+header .nav-brand-logo-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+header .nav-brand-logo {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+@media (width < 900px) {
+  header .nav-brand-bar-inner {
+    gap: 12px 22px;
+    padding: 6px 16px;
+  }
+
+  header .nav-brand-bar-logo img {
+    height: 15px;
+  }
+
+  header .nav-brand-logo {
+    height: 32px;
+  }
+}
+
 header nav {
   box-sizing: border-box;
   display: flex;
