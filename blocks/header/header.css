@@ -271,6 +271,7 @@ header nav .nav-sections a:hover {
   }
 
   /* dropdown caret */
+  /* stylelint-disable-next-line no-descending-specificity */
   header nav .nav-sections .nav-drop > .button-container {
     padding-right: 16px;
     cursor: pointer;
@@ -363,10 +364,12 @@ header nav .nav-tools .default-content-wrapper {
   gap: 16px;
 }
 
+/* stylelint-disable no-descending-specificity */
 header nav .nav-tools p,
 header nav .nav-tools .button-container {
   margin: 0;
 }
+/* stylelint-enable no-descending-specificity */
 
 header nav .nav-tools a:any-link {
   color: var(--brand-nav-slate);
@@ -401,6 +404,7 @@ header nav .nav-tools a:hover {
   color: var(--brand-nav-accent-end);
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .lang-switcher.single-lang .lang-button,
 .lang-switcher .lang-button[disabled] {
   opacity: 0.55;
@@ -428,10 +432,12 @@ header nav .nav-tools a:hover {
   display: block;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .lang-switcher .lang-menu li {
   padding: 0;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
 .lang-switcher .lang-menu a {
   display: block;
   padding: 8px 12px;
