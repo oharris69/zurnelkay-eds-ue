@@ -21,14 +21,36 @@
 const HERO_SELECTOR = '#bannerCarousel';
 const DAM_BASE = '/content/dam/zurn/en/images';
 
-// source banner filename (lowercased, no query) -> DAM asset path
+// source banner filename (lowercased, no query) -> DAM asset path.
+// The import sees the source's mobile (768) variants; we map each of the 8 hero
+// slides to its desktop banner in the DAM. Both mobile and desktop source names
+// are keyed so the map is robust to either being emitted. DAM filenames are the
+// exact ones uploaded to /content/dam/zurn/en/images (from the live source).
 const IMAGE_MAP = {
+  // slide 1 — Designed for Compliance (GRZE)
   'zurnv49-grze-banner-mob-2026.png': `${DAM_BASE}/zurnv49-grze-banner-2026.jpeg`,
   'zurnv49-grze-banner-2026.png': `${DAM_BASE}/zurnv49-grze-banner-2026.jpeg`,
+  // slide 2 — Accurate PRV Sizing (Wilkins PRV Calculator)
+  '480-375-wilkins-prv-calculator-homepage-banner-2000x600-mobile.png': `${DAM_BASE}/zurnv49-480-375-Wilkins-PRV-Calculator-Homepage-Banner-2300x800.jpeg`,
+  'zurnv49-480-375-wilkins-prv-calculator-homepage-banner-2300x800.png': `${DAM_BASE}/zurnv49-480-375-Wilkins-PRV-Calculator-Homepage-Banner-2300x800.jpeg`,
+  // slide 3 — 975XL3N N-Pattern
   '480-356-npd-bc-n-pattern-975xl3-web-banner-1200x768-mobile.png': `${DAM_BASE}/480-356-NPD-BC-n-Pattern-975XL3-Web-Banner_2000x600.jpeg`,
   '480-356-npd-bc-n-pattern-975xl3-web-banner-2000x600.png': `${DAM_BASE}/480-356-NPD-BC-n-Pattern-975XL3-Web-Banner_2000x600.jpeg`,
+  // slide 4 — Interceptor Sizing
   'zurnv49-interceptor-sizing-tool-homepage-banner-mobile.png': `${DAM_BASE}/zurnv49-interceptor-sizing-tool-homepage-banner.jpeg`,
   'zurnv49-interceptor-sizing-tool-homepage-banner.png': `${DAM_BASE}/zurnv49-interceptor-sizing-tool-homepage-banner.jpeg`,
+  // slide 5 — 900XL3 Series
+  '480-362-900xl3-web-banner-desktop-1250x600.png': `${DAM_BASE}/480-362-900XL3-Web-Banner-Desktop_2000x600.jpeg`,
+  '480-362-900xl3-web-banner-desktop-2000x600.png': `${DAM_BASE}/480-362-900XL3-Web-Banner-Desktop_2000x600.jpeg`,
+  // slide 6 — Z886 Durable Solution
+  'zurnv49-z886-di-banner-mobile.png': `${DAM_BASE}/zurnv49-Z886-DI-banner.jpeg`,
+  'zurnv49-z886-di-banner.png': `${DAM_BASE}/zurnv49-Z886-DI-banner.jpeg`,
+  // slide 7 — Sundara Handwashing
+  'zurnv49-sundara-z5001-reef-seashell-mobile.png': `${DAM_BASE}/zurnv49-sundara-z5001-reef-seashell.jpeg`,
+  'zurnv49-sundara-z5001-reef-seashell.png': `${DAM_BASE}/zurnv49-sundara-z5001-reef-seashell.jpeg`,
+  // slide 8 — Build with Confidence (Spec Library)
+  'zurnv49-specification-library-banner-mobile.png': `${DAM_BASE}/zurnv49-specification-library-banner.jpeg`,
+  'zurnv49-specification-library-banner.png': `${DAM_BASE}/zurnv49-specification-library-banner.jpeg`,
 };
 
 function filenameOf(src) {
