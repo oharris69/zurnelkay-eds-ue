@@ -28,6 +28,7 @@ const BRAND_BAR_LOGOS = [
   { src: `${BRAND_ASSET_BASE}/zebrands-elkay-logo-white-svg.svg`, alt: 'Elkay', href: 'https://www.elkay.com' },
   { src: `${BRAND_ASSET_BASE}/zebrands-wilkins-logo-white-svg.svg`, alt: 'Wilkins', href: 'https://www.zurn.com/brands/wilkins' },
   { src: `${BRAND_ASSET_BASE}/zebrands-hadrian-logo-white-svg.svg`, alt: 'Hadrian', href: 'https://www.hadrian-inc.com' },
+  { src: `${BRAND_ASSET_BASE}/zebrands-world-dryer-logo-white-svg.svg`, alt: 'World Dryer', href: 'https://www.worlddryer.com' },
   { src: `${BRAND_ASSET_BASE}/zebrands-just-horizontal-reverse-svg.svg`, alt: 'Just Manufacturing', href: 'https://www.justmfg.com' },
 ];
 
