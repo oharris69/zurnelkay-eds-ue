@@ -1,18 +1,13 @@
-import { getMetadata, fetchPlaceholders } from '../../scripts/aem.js';
+import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 import {
   getHostname,
-  getLanguage, getSiteName, TAG_ROOT, PATH_PREFIX, SUPPORTED_LANGUAGES, computeLocalizedUrl, discoverLanguagesFromPlaceholders,
+  getLanguage, getSiteName, PATH_PREFIX, computeLocalizedUrl, discoverLanguagesFromPlaceholders,
 } from '../../scripts/utils.js';
 
 import {
-  getNavigationMenu, formatNavigationJsonData,
-} from './navigation.js';
-import {
-  button,
   div,
   img,
-  span,
   a,
 } from '../../scripts/dom-helpers.js';
 
@@ -131,22 +126,6 @@ function toggleAllNavSections(sections, expanded = false) {
   }
 }
 
-async function overlayLoad(navSections) {
-  const langCode = getLanguage();
-  const placeholdersData = await fetchLanguagePlaceholders();
-  const navOverlay = navSections.querySelector(constants.NAV_MENU_OVERLAY_WITH_SELECTOR);
-  if (!navOverlay) {
-    const structuredNav = formatNavigationJsonData(window.navigationData[`/${langCode}`]);
-    // Add navigation menu to header
-    navSections.append(getNavigationMenu(structuredNav, placeholdersData));
-  }
-  const rightColumn = navSections.querySelector('.nav-menu-column.right');
-  const leftColumn = navSections.querySelector('.nav-menu-column.left');
-  isDesktop.addEventListener('change', () => closesideMenu(leftColumn, rightColumn));
-  document.body.addEventListener('click', (e) => closesearchbar(e, navSections));
-  document.body.addEventListener('keydown', (e) => closesearchbar(e, navSections));
-}
-
 /**
  * Toggles the entire nav
  * @param {Element} nav The container element
@@ -204,10 +183,12 @@ function settingAltTextForSearchIcon() {
   }
   searchImage.style.cursor = 'pointer';
   searchImage.addEventListener('click', () => {
+    // eslint-disable-next-line no-use-before-define
     createSearchBox();
   });
   searchImage.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
+      // eslint-disable-next-line no-use-before-define
       createSearchBox();
       e.currentTarget.nextElementSibling.focus();
     }
@@ -257,10 +238,12 @@ function createSearchBox() {
     cancelImg.alt = 'cancel';
     cancelImg.style.cssText = 'display: flex; cursor: pointer;';
     cancelContainer.addEventListener('click', () => {
+      // eslint-disable-next-line no-use-before-define
       closeSearchBox();
     });
     cancelContainer.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === 'Escape') {
+        // eslint-disable-next-line no-use-before-define
         closeSearchBox();
       }
     });
@@ -278,7 +261,6 @@ function createSearchBox() {
     searchIcon.alt = 'search';
     searchIcon.addEventListener('click', () => {
       if (searchInputBox.value) {
-        /// window.location.href = (listOfAllPlaceholdersData.searchRedirectUrl || '<sitename>/en/search?q=') + searchInputBox.value;
         window.location.href = `/content/${siteName}/search-results.html?q=${searchInputBox.value}`;
       }
     });
@@ -310,8 +292,6 @@ function createSearchBox() {
 
 function closeSearchBox() {
   const navWrapper = document.querySelector('.nav-wrapper');
-  const headerWrapper = document.querySelector('.header-wrapper');
-  const searchContainer = headerWrapper ? headerWrapper.querySelector('.search-container') : null;
   const cancelContainer = navWrapper ? navWrapper.querySelector('.cancel-container') : null;
   // const overlay = document.querySelector('.overlay');
   // const searchImage = document.querySelector('.-light');
@@ -338,7 +318,8 @@ const closeSearchOnFocusOut = (e, navTools) => {
   if (searchContainer && searchContainer.style.display !== 'none') {
     const cancelContainer = navTools ? navTools.querySelector('.cancel-container') : null;
     const searchImage = navTools ? navTools.querySelector('.icon-search-light') : null;
-    const isClickInside = (searchContainer && searchContainer.contains && searchContainer.contains(e.target))
+    const isClickInside = (searchContainer && searchContainer.contains
+        && searchContainer.contains(e.target))
     || (cancelContainer && cancelContainer.contains && cancelContainer.contains(e.target))
     || (searchImage && searchImage.contains && searchImage.contains(e.target));
     if (!isClickInside) {
@@ -484,15 +465,6 @@ export default async function decorate(block) {
     navPath = navMeta ? new URL(navMeta, window.location).pathname : `/content/${siteName}${PATH_PREFIX}/${langCode}/nav`;
   }
 
-  // const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-
-  const pathSegments = window.location.pathname.split('/').filter(Boolean);
-  // console.log("pathSegments header: ", pathSegments);
-  const parentPath = pathSegments.length > 2 ? `/${pathSegments.slice(0, 3).join('/')}` : '/';
-  // console.log("parentPath header: ", parentPath);
-  // const navPath = locale ? `/${locale}/nav` : parentPath+'/nav';
-  // const navPath = parentPath=='/' ? locale ? `/${locale}/nav` : '/nav' : locale ? `/${locale}/nav` : parentPath+'/nav';
-  // console.log("navPath header: ", navPath);
   const fragment = await loadFragment(navPath);
 
   // decorate nav DOM
@@ -562,8 +534,13 @@ export default async function decorate(block) {
         const code = String(raw).replace('_', '-').toLowerCase();
         const [langPart, regionPart] = code.split('-');
         const displayCode = `${langPart}${regionPart ? `-${regionPart}` : ''}`.toUpperCase();
-        const country = regionPart ? (regionNames ? regionNames.of(regionPart.toUpperCase()) : regionPart.toUpperCase())
-          : (languageNames ? languageNames.of(langPart) : langPart.toUpperCase());
+        let country;
+        if (regionPart) {
+          const rp = regionPart.toUpperCase();
+          country = regionNames ? regionNames.of(rp) : rp;
+        } else {
+          country = languageNames ? languageNames.of(langPart) : langPart.toUpperCase();
+        }
 
         const li = document.createElement('li');
         li.className = 'lang-item';
