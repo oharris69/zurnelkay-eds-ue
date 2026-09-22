@@ -22,14 +22,13 @@ const siteName = await getSiteName();
 // the dark brand bar above it. Filenames match the DAM upload under
 // /content/dam/zurn/en/brand/.
 const BRAND_ASSET_BASE = '/content/dam/zurn/en/brand';
-const ZURN_LOGO = `${BRAND_ASSET_BASE}/zurn-logo-blue.png`;
+const ZURN_LOGO = `${BRAND_ASSET_BASE}/zurn-logo-blue.svg`;
 const BRAND_BAR_LOGOS = [
-  { src: `${BRAND_ASSET_BASE}/zurn-logo-white.png`, alt: 'Zurn', href: '/' },
-  { src: `${BRAND_ASSET_BASE}/elkay-logo-white.png`, alt: 'Elkay', href: 'https://www.elkay.com' },
-  { src: `${BRAND_ASSET_BASE}/wilkins-logo-white.png`, alt: 'Wilkins', href: 'https://www.zurn.com/brands/wilkins' },
-  { src: `${BRAND_ASSET_BASE}/hadrian-logo-white.png`, alt: 'Hadrian', href: 'https://www.hadrian-inc.com' },
-  { src: `${BRAND_ASSET_BASE}/world-dryer-logo-white.png`, alt: 'World Dryer', href: 'https://www.worlddryer.com' },
-  { src: `${BRAND_ASSET_BASE}/just-logo-white.png`, alt: 'Just Manufacturing', href: 'https://www.justmfg.com' },
+  { src: `${BRAND_ASSET_BASE}/zebrands-zurn-logo-white-svg.svg`, alt: 'Zurn', href: '/' },
+  { src: `${BRAND_ASSET_BASE}/zebrands-elkay-logo-white-svg.svg`, alt: 'Elkay', href: 'https://www.elkay.com' },
+  { src: `${BRAND_ASSET_BASE}/zebrands-wilkins-logo-white-svg.svg`, alt: 'Wilkins', href: 'https://www.zurn.com/brands/wilkins' },
+  { src: `${BRAND_ASSET_BASE}/zebrands-hadrian-logo-white-svg.svg`, alt: 'Hadrian', href: 'https://www.hadrian-inc.com' },
+  { src: `${BRAND_ASSET_BASE}/zebrands-just-horizontal-reverse-svg.svg`, alt: 'Just Manufacturing', href: 'https://www.justmfg.com' },
 ];
 
 /**
