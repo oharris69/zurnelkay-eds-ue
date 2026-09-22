@@ -1,8 +1,8 @@
 import archiver from '/home/node/.excat-marketplaces/excat-marketplace/excat/tools/excatops-mcp/node_modules/archiver/index.js';
 import { createWriteStream } from 'fs';
 import path from 'path';
-const buildDir = 'migration-work/dist/zurn-about-us-1.0.1';
-const outZip = 'migration-work/dist/zurn-about-us-1.0.1.zip';
+const buildDir = 'migration-work/dist/zurn-about-us-1.0.2';
+const outZip = 'migration-work/dist/zurn-about-us-1.0.2.zip';
 await new Promise((resolve, reject) => {
   const output = createWriteStream(outZip);
   const archive = archiver('zip', { zlib: { level: 9 } });

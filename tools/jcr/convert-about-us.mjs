@@ -33,6 +33,14 @@ xml = xml
   .replace(/https?:\/\/www\.zurn\.com[^"]*mission_vision_values_banner\.jpeg/g, MVV_DAM)
   .replace(/https?:\/\/www\.zurn\.com[^"]*mission-vision-values-banner-mobile\.png/g, MVV_DAM);
 
+// The source ships the banner as a desktop + mobile pair, so the conversion
+// produced TWO image nodes pointing at the same DAM asset (renders doubled).
+// Drop the first (empty-alt) banner image node, keeping the alt-bearing one.
+xml = xml.replace(
+  /<image sling:resourceType="core\/franklin\/components\/image\/v1\/image"[^>]*image="[^"]*mission_vision_values_banner\.jpeg"[^>]*imageAlt=""\s*\/>\s*/,
+  '',
+);
+
 // Destination: the existing en/about-us node (delivery path /en/about-us).
 const outPath = path.join(OUT, 'en', 'about-us', '.content.xml');
 await mkdir(path.dirname(outPath), { recursive: true });
