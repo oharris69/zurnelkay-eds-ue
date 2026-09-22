@@ -19,6 +19,15 @@
   /* Zurn palette */
   --heading-primary-color: #30475a; /* dark slate used on h1/h4 */
   --brand-blue: #005995;
+  --brand-blue-bright: #0075c9; /* Zurn wordmark blue */
+  --brand-nav-slate: #1b2a34; /* nav menu label slate */
+  --brand-nav-accent-start: #00b497; /* teal accent */
+  --brand-nav-accent-end: #0368ad; /* blue accent */
+  --brand-brandbar-color: #042a37; /* dark charcoal top brand bar */
+
+  /* header/nav: white bar with slate labels (consumed by styles.css defaults) */
+  --brand-nav-background-color: #fff;
+  --brand-nav-text-color: #1b2a34;
 
   /* fonts */
   --heading-font-family: "Gotham Zurn", arial, helvetica, sans-serif;

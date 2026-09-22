@@ -1,41 +1,120 @@
-footer {
-  background-color: var(--dark-color);
-  font-size: var(--body-font-size-xs);
-  font-family: var(--light-font-family);
-  background-color: var(--dark-color-opacity);
-  background-color: #000;
+/* ===================================================================
+ * Zurn footer — dark band matching zurn.com
+ * Source-extracted values (getComputedStyle on www.zurn.com/us/en.html):
+ *   dark band background : rgb(4, 42, 55)  (#042a37, Zurn dark teal)
+ *   nav link             : 14px / weight 500
+ *   copyright text       : 14px / weight 400, white
+ *   link accent (brand)  : Zurn teal #00b497 for hover on dark
+ * Runtime DOM (post-decorate):
+ *   footer .footer.block > div > div.section > .default-content-wrapper
+ *     > p > strong  (brand line)
+ *     > ul > li*     (nav links)
+ *     > p            (copyright)
+ * =================================================================== */
+
+/* `body footer` matches the global styles.css rule specificity so the
+   Zurn dark-band background wins over the boilerplate #000 default */
+body footer {
+  --footer-bg: #042a37;               /* extracted Zurn dark-band teal */
+  --footer-fg: var(--footer-text-color, #fff);
+  --footer-link: #cfd6da;             /* light grey link on dark */
+  --footer-link-hover: #00b497;       /* Zurn teal accent */
+  --footer-muted: #9aa7ae;            /* muted copyright grey */
+
   width: 100%;
   z-index: 2;
-  color: #ffffff;
+  background-color: var(--footer-bg);
+  color: var(--footer-fg);
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-xs);
 }
 
+/* content container */
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 40px 24px 28px;
 }
 
-footer .footer p {
+/* single section wrapper carries the layout */
+footer .footer .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* brand line ("Zurn Elkay Water Solutions") */
+footer .footer .default-content-wrapper > p:first-child {
   margin: 0;
+  color: var(--footer-fg);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-footer .footer img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 20px;
+footer .footer .default-content-wrapper > p:first-child strong {
+  font-weight: 700;
 }
 
-footer .footer a {
-  color: #ffffff;
+/* link list — horizontal, wrapping row (not a raw bullet list) */
+footer .footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer li {
+  margin: 0;
+  padding: 0;
+}
+
+/* footer links — override global a rules (dark color + FA chevron) */
+footer .footer a,
+footer .footer a:any-link {
+  display: inline-block;
+  padding: 0;
+  color: var(--footer-link);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-decoration: none;
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+/* remove the global Font Awesome chevron injected via a::after */
+footer .footer a::after,
+footer .footer a:any-link::after {
+  content: none;
+}
+
+footer .footer a:hover,
+footer .footer a:focus {
+  color: var(--footer-link-hover);
   text-decoration: none;
 }
 
-footer .footer a:hover {
-  color: var(--main-accent-color);
+/* copyright — visually separated at the bottom */
+footer .footer .default-content-wrapper > p:last-child {
+  margin: 8px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid rgb(255 255 255 / 15%);
+  color: var(--footer-muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 50px 32px;
+    padding: 52px 32px 32px;
+  }
+
+  footer .footer ul {
+    gap: 14px 36px;
   }
 }
