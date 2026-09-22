@@ -28,7 +28,7 @@ let xml = await convertFileToJcr(plainPath, meta.title || 'About Zurn', componen
 // The Mission/Vision/Values banner is a zurn.com-internal image (bot-blocked,
 // won't deliver). It was uploaded to the DAM, so rewrite both source variants
 // (desktop .jpeg + mobile .png transform URLs) to the delivered DAM asset.
-const MVV_DAM = '/content/dam/zurn/en/images/mission-vision-values-banner.jpeg';
+const MVV_DAM = '/content/dam/zurn/en/images/mission_vision_values_banner.jpeg';
 xml = xml
   .replace(/https?:\/\/www\.zurn\.com[^"]*mission_vision_values_banner\.jpeg/g, MVV_DAM)
   .replace(/https?:\/\/www\.zurn\.com[^"]*mission-vision-values-banner-mobile\.png/g, MVV_DAM);
