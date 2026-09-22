@@ -2,7 +2,7 @@ import { writeFile, mkdir, cp } from 'fs/promises';
 import path from 'path';
 
 const NAME = 'zurn-homepage';
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 const GROUP = 'zurn';
 // The FR homepage lives AT the French language master root node (fr).
 const SITE_ROOT = '/content/zurn/language-masters/fr';
@@ -47,12 +47,16 @@ await cp(
 const vaultDir = path.join(buildDir, 'META-INF', 'vault');
 await mkdir(vaultDir, { recursive: true });
 
-// Single filter root on fr with NO exclude — FileVault replaces the whole fr
-// subtree, so the pre-existing fr folder is cleanly overwritten as a cq:Page.
+// Single filter root on fr with mode="replace". By default FileVault MERGES into
+// an existing node and will NOT change its primary type — which is why v1.0.1
+// left `fr` as an nt:folder (the cq:Page conversion silently no-op'd). mode=replace
+// forces FileVault to delete the existing fr node and recreate it from the package,
+// so nt:folder → cq:Page takes effect. The package contains the full fr subtree
+// (homepage + 11 markets + both form JSONs), so the replace loses nothing.
 await writeFile(path.join(vaultDir, 'filter.xml'),
 `<?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-  <filter root="${SITE_ROOT}"/>
+  <filter root="${SITE_ROOT}" mode="replace"/>
 </workspaceFilter>
 `, 'utf-8');
 
