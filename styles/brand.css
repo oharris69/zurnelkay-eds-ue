@@ -8,7 +8,7 @@
 :root {
   /* brand color overrides consumed by styles.css */
   --brand-background-color: #fff;
-  --brand-text-color: #000;
+  --brand-text-color: #1f262e; /* Zurn soft near-black body text (from zurn.com) */
   --brand-link-color: #005995; /* Zurn blue */
   --brand-link-hover-color: #0a58ca;
   --brand-theme-color: #005995;
@@ -17,7 +17,7 @@
   --brand-light-text-color: #fff;
 
   /* Zurn palette */
-  --heading-primary-color: #30475a; /* dark slate used on h1/h4 */
+  --heading-primary-color: #1b4462; /* Zurn deep navy for headings (from zurn.com) */
   --brand-blue: #005995;
   --brand-blue-bright: #0075c9; /* Zurn wordmark blue */
   --brand-nav-slate: #1b2a34; /* nav menu label slate */
