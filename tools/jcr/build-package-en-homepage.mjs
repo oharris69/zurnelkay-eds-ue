@@ -2,7 +2,7 @@ import { writeFile, mkdir, cp } from 'fs/promises';
 import path from 'path';
 
 const NAME = 'zurn-en-homepage';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const GROUP = 'zurn';
 // The EN homepage lives AT the English language master node, which maps to `/`.
 const SITE_ROOT = '/content/zurn/language-masters/en';

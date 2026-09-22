@@ -14,6 +14,7 @@ import cleanupTransformer from './transformers/zurn-cleanup.js';
 import sectionsTransformer from './transformers/zurn-sections.js';
 import dmImagesTransformer from './transformers/zurn-dm-images.js';
 import formTransformer from './transformers/zurn-form.js';
+import heroDamImagesTransformer from './transformers/zurn-hero-dam-images.js';
 
 const parsers = {
   'carousel-hero': carouselHeroParser,
@@ -56,6 +57,7 @@ const PAGE_TEMPLATE = {
 // the newsletter embed with the form-block table.
 const transformers = [
   cleanupTransformer,
+  heroDamImagesTransformer, // rewrite EN hero banner imgs to DAM paths (beforeTransform, before the hero parser extracts them)
   ...(PAGE_TEMPLATE.sections && PAGE_TEMPLATE.sections.length > 1 ? [sectionsTransformer] : []),
   formTransformer, // replace the JS-injected HubSpot newsletter embed with a form block referencing the JSON sheet
   dmImagesTransformer,

@@ -23,7 +23,15 @@ if (!existsSync(plainPath)) {
   process.exit(1);
 }
 
-const xml = await convertFileToJcr(plainPath, meta.title || meta.path, components);
+let xml = await convertFileToJcr(plainPath, meta.title || meta.path, components);
+
+// The importer's adjustImageUrls prepends the source origin (https://www.zurn.com)
+// to our root-relative hero DAM paths. Rewrite our own DAM host-prefixed refs
+// back to root-relative so they resolve on OUR delivery (paths.json maps
+// /content/dam/zurn/). Scoped to /content/dam/zurn/en/ only — leaves the
+// external zurnv49 dynamic-media and scene7 URLs untouched.
+xml = xml.replace(/https?:\/\/www\.zurn\.com(\/content\/dam\/zurn\/en\/)/g, '$1');
+
 // The EN homepage lives AT the `en` language-master node, so write en/.content.xml
 const outPath = path.join(OUT, 'en', '.content.xml');
 await mkdir(path.dirname(outPath), { recursive: true });

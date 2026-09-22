@@ -465,6 +465,45 @@ var CustomImportScript = (() => {
     });
   }
 
+  // tools/importer/transformers/zurn-hero-dam-images.js
+  var HERO_SELECTOR = "#bannerCarousel";
+  var DAM_BASE = "/content/dam/zurn/en/images";
+  var IMAGE_MAP = {
+    "zurnv49-grze-banner-mob-2026.png": `${DAM_BASE}/zurnv49-grze-banner-2026.jpeg`,
+    "zurnv49-grze-banner-2026.png": `${DAM_BASE}/zurnv49-grze-banner-2026.jpeg`,
+    "480-356-npd-bc-n-pattern-975xl3-web-banner-1200x768-mobile.png": `${DAM_BASE}/480-356-NPD-BC-n-Pattern-975XL3-Web-Banner_2000x600.jpeg`,
+    "480-356-npd-bc-n-pattern-975xl3-web-banner-2000x600.png": `${DAM_BASE}/480-356-NPD-BC-n-Pattern-975XL3-Web-Banner_2000x600.jpeg`,
+    "zurnv49-interceptor-sizing-tool-homepage-banner-mobile.png": `${DAM_BASE}/zurnv49-interceptor-sizing-tool-homepage-banner.jpeg`,
+    "zurnv49-interceptor-sizing-tool-homepage-banner.png": `${DAM_BASE}/zurnv49-interceptor-sizing-tool-homepage-banner.jpeg`
+  };
+  function filenameOf(src) {
+    try {
+      const noQuery = src.split("?")[0].replace(/\/$/, "");
+      return noQuery.split("/").pop().toLowerCase();
+    } catch (e) {
+      return "";
+    }
+  }
+  function transform5(hookName, element, payload) {
+    if (hookName !== "beforeTransform") return;
+    const hero = element.querySelector(HERO_SELECTOR);
+    if (!hero) return;
+    hero.querySelectorAll("img").forEach((im) => {
+      const src = im.getAttribute("src") || "";
+      const dam = IMAGE_MAP[filenameOf(src)];
+      if (dam) {
+        im.setAttribute("src", dam);
+        im.removeAttribute("srcset");
+      }
+    });
+    hero.querySelectorAll("source[srcset]").forEach((s) => {
+      const set = s.getAttribute("srcset") || "";
+      if (Object.keys(IMAGE_MAP).some((fn) => set.toLowerCase().includes(fn))) {
+        s.removeAttribute("srcset");
+      }
+    });
+  }
+
   // tools/importer/import-homepage.js
   var parsers = {
     "carousel-hero": parse,
@@ -501,6 +540,8 @@ var CustomImportScript = (() => {
   };
   var transformers = [
     transform,
+    transform5,
+    // rewrite EN hero banner imgs to DAM paths (beforeTransform, before the hero parser extracts them)
     ...PAGE_TEMPLATE.sections && PAGE_TEMPLATE.sections.length > 1 ? [transform2] : [],
     transform4,
     // replace the JS-injected HubSpot newsletter embed with a form block referencing the JSON sheet
