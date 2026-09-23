@@ -4,7 +4,10 @@
  * content (image + heading + paragraph).
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each tab's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 let tabsAudienceCount = 0;
 
 export default function decorate(block) {
@@ -27,6 +30,8 @@ export default function decorate(block) {
     panel.className = 'tabs-audience-panel';
     panel.id = `tabs-audience-${instance}-panel-${i + 1}`;
     panel.setAttribute('role', 'tabpanel');
+    // Preserve Universal Editor edit instrumentation for this tab item.
+    moveInstrumentation(row, panel);
 
     // Split the panel content into a media column (image) and a body
     // column (heading + text). Authors may place image and text in one

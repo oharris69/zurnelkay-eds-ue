@@ -7,7 +7,10 @@
  * source order.
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each crumb's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   const rows = [...block.children];
 
@@ -20,6 +23,7 @@ export default function decorate(block) {
   rows.forEach((row) => {
     const li = document.createElement('li');
     li.className = 'breadcrumb-product-item';
+    moveInstrumentation(row, li);
 
     const link = row.querySelector('a');
     if (link) {

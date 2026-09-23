@@ -9,7 +9,10 @@
  * (e.g. "Other").
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each resource's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 function downloadIconSvg() {
   return `
     <svg class="download-resources-icon" width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
@@ -41,6 +44,7 @@ export default function decorate(block) {
 
     const li = document.createElement('li');
     li.className = 'download-resources-item';
+    moveInstrumentation(row, li);
 
     link.classList.add('download-resources-link');
     if (!link.hasAttribute('download')) link.setAttribute('download', '');

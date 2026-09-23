@@ -3,7 +3,10 @@
  * Each card: an icon (image/svg) + title + short description, centered.
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each card's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   const ul = document.createElement('ul');
   ul.className = 'cards-icon-list';
@@ -11,6 +14,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     li.className = 'cards-icon-item';
+    moveInstrumentation(row, li);
     [...row.children].forEach((cell) => {
       const pic = cell.querySelector('picture');
       if (pic && cell.children.length === 1 && cell.querySelector(':scope > picture, :scope > p > picture')) {
