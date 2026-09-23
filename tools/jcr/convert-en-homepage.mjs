@@ -32,6 +32,12 @@ let xml = await convertFileToJcr(plainPath, meta.title || meta.path, components)
 // external zurnv49 dynamic-media and scene7 URLs untouched.
 xml = xml.replace(/https?:\/\/www\.zurn\.com(\/content\/dam\/zurn\/en\/)/g, '$1');
 
+// Zurn markup stores the card's IMAGE URL in the anchor's title attribute, which
+// becomes linkTitle="<scene7 url>" on the button — surfacing as a junk "Title"
+// field in the Universal Editor ("Latest From Zurn" cards). Drop any linkTitle
+// whose value is a URL so the button Title field is clean.
+xml = xml.replace(/\s+linkTitle="https?:\/\/[^"]*"/g, '');
+
 // The EN homepage lives AT the `en` language-master node, so write en/.content.xml
 const outPath = path.join(OUT, 'en', '.content.xml');
 await mkdir(path.dirname(outPath), { recursive: true });

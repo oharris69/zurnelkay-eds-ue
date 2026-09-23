@@ -42,6 +42,18 @@ export default function transform(hookName, element, payload) {
       '#db_lr_pixel_ad', // LiveRamp tracking pixel
       'img[src*="rlcdn.com"]', // any other rlcdn tracking pixels
     ]);
+
+    // Zurn markup puts the card's IMAGE URL in the anchor's title attribute
+    // (e.g. title="https://s7d4.scene7.com/is/image/Elkay/...") on linked
+    // headings. When an anchor auto-decorates to a Button block, that URL
+    // leaks into the button's Title field. Strip any title attribute whose
+    // value is a URL so buttons/links don't carry an image URL as their title.
+    element.querySelectorAll('a[title]').forEach((a) => {
+      const t = (a.getAttribute('title') || '').trim();
+      if (/^https?:\/\//i.test(t) || t.includes('scene7.com') || /\.(png|jpe?g|svg|gif|webp)(\?|$)/i.test(t)) {
+        a.removeAttribute('title');
+      }
+    });
   }
 
   if (hookName === TransformHook.afterTransform) {

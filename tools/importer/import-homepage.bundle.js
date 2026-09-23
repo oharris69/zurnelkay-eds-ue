@@ -308,6 +308,12 @@ var CustomImportScript = (() => {
         'img[src*="rlcdn.com"]'
         // any other rlcdn tracking pixels
       ]);
+      element.querySelectorAll("a[title]").forEach((a) => {
+        const t = (a.getAttribute("title") || "").trim();
+        if (/^https?:\/\//i.test(t) || t.includes("scene7.com") || /\.(png|jpe?g|svg|gif|webp)(\?|$)/i.test(t)) {
+          a.removeAttribute("title");
+        }
+      });
     }
     if (hookName === TransformHook.afterTransform) {
       WebImporter.DOMUtils.remove(element, [
