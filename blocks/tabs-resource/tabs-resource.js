@@ -4,7 +4,10 @@
  * a grid of resource-link cards (icon + linked title + short description).
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each tab's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 let tabsResourceCount = 0;
 
 export default function decorate(block) {
@@ -25,6 +28,8 @@ export default function decorate(block) {
     panel.className = 'tabs-resource-panel';
     panel.id = `tabs-resource-${instance}-panel-${i + 1}`;
     panel.setAttribute('role', 'tabpanel');
+    // Preserve Universal Editor edit instrumentation for this tab item.
+    moveInstrumentation(row, panel);
     const grid = document.createElement('div');
     grid.className = 'tabs-resource-grid';
     // Remaining cells hold a flat run of resource groups (icon link, linked

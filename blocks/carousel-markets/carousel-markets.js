@@ -4,7 +4,10 @@
  * Shows multiple cards per view on desktop; arrows page through.
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each card's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   const viewport = document.createElement('div');
   viewport.className = 'carousel-markets-viewport';
@@ -14,6 +17,7 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     li.className = 'carousel-markets-card';
+    moveInstrumentation(row, li);
     [...row.children].forEach((cell) => {
       if (cell.querySelector('picture')) cell.classList.add('carousel-markets-image');
       else cell.classList.add('carousel-markets-body');

@@ -6,7 +6,10 @@
  * default content, not inside the block.
  *
  * Structural decorator only — no brand tokens (design pass owns those).
+ * moveInstrumentation() preserves each tile's Universal Editor edit hooks.
  */
+import { moveInstrumentation } from '../../scripts/scripts.js';
+
 export default function decorate(block) {
   const rows = [...block.children];
 
@@ -17,6 +20,7 @@ export default function decorate(block) {
   rows.forEach((row) => {
     const li = document.createElement('li');
     li.className = 'carousel-media-tile';
+    moveInstrumentation(row, li);
     while (row.firstElementChild) li.append(row.firstElementChild);
     track.append(li);
   });
