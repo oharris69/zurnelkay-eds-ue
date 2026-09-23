@@ -10,7 +10,8 @@
       "aemSiteName": "zurn",
       "aemSiteTitle": "Zurn",
       "libraryUrl": "https://main--sta-xwalk-boilerplate--aemysites.aem.page/tools/sidekick/library.json",
-      "botProtected": true
+      "botProtected": true,
+      "baseUrl": "https://www.zurn.com"
     }
   },
   "features": [

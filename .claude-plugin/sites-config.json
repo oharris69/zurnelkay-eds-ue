@@ -1,0 +1,272 @@
+{
+  "sites": [
+    {
+      "path": "/config/oharris69/sites/aem-boilerplate-commerce.json",
+      "name": "aem-boilerplate-commerce"
+    },
+    {
+      "path": "/config/oharris69/sites/aem-boilerplate-xcom.json",
+      "name": "aem-boilerplate-xcom"
+    },
+    {
+      "path": "/config/oharris69/sites/aem-boilerplate-xwalk.json",
+      "name": "aem-boilerplate-xwalk"
+    },
+    {
+      "path": "/config/oharris69/sites/aem-boilerplate.json",
+      "name": "aem-boilerplate"
+    },
+    {
+      "path": "/config/oharris69/sites/aemvision.json",
+      "name": "aemvision"
+    },
+    {
+      "path": "/config/oharris69/sites/armandhammer.json",
+      "name": "armandhammer"
+    },
+    {
+      "path": "/config/oharris69/sites/ascend.json",
+      "name": "ascend"
+    },
+    {
+      "path": "/config/oharris69/sites/assaabloy.json",
+      "name": "assaabloy"
+    },
+    {
+      "path": "/config/oharris69/sites/behr-doc-based.json",
+      "name": "behr-doc-based"
+    },
+    {
+      "path": "/config/oharris69/sites/behr.json",
+      "name": "behr"
+    },
+    {
+      "path": "/config/oharris69/sites/bentley.json",
+      "name": "bentley"
+    },
+    {
+      "path": "/config/oharris69/sites/blueyonder.json",
+      "name": "blueyonder"
+    },
+    {
+      "path": "/config/oharris69/sites/bristan.json",
+      "name": "bristan"
+    },
+    {
+      "path": "/config/oharris69/sites/citisignal-one.json",
+      "name": "citisignal-one"
+    },
+    {
+      "path": "/config/oharris69/sites/da-block-collection.json",
+      "name": "da-block-collection"
+    },
+    {
+      "path": "/config/oharris69/sites/da-tutorial.json",
+      "name": "da-tutorial"
+    },
+    {
+      "path": "/config/oharris69/sites/dayforce-da.json",
+      "name": "dayforce-da"
+    },
+    {
+      "path": "/config/oharris69/sites/dayforce.json",
+      "name": "dayforce"
+    },
+    {
+      "path": "/config/oharris69/sites/dycomind.json",
+      "name": "dycomind"
+    },
+    {
+      "path": "/config/oharris69/sites/emerson.json",
+      "name": "emerson"
+    },
+    {
+      "path": "/config/oharris69/sites/ensemble-dot-com.json",
+      "name": "ensemble-dot-com"
+    },
+    {
+      "path": "/config/oharris69/sites/entegris-eds.json",
+      "name": "entegris-eds"
+    },
+    {
+      "path": "/config/oharris69/sites/grace-eds-ue.json",
+      "name": "grace-eds-ue"
+    },
+    {
+      "path": "/config/oharris69/sites/gwu-edge.json",
+      "name": "gwu-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/idi-commerce-doc.json",
+      "name": "idi-commerce-doc"
+    },
+    {
+      "path": "/config/oharris69/sites/idi-commerce.json",
+      "name": "idi-commerce"
+    },
+    {
+      "path": "/config/oharris69/sites/kiwicamping.json",
+      "name": "kiwicamping"
+    },
+    {
+      "path": "/config/oharris69/sites/komatsu.json",
+      "name": "komatsu"
+    },
+    {
+      "path": "/config/oharris69/sites/kwikset.json",
+      "name": "kwikset"
+    },
+    {
+      "path": "/config/oharris69/sites/loves-eds-ue.json",
+      "name": "loves-eds-ue"
+    },
+    {
+      "path": "/config/oharris69/sites/lsa-eds-ue.json",
+      "name": "lsa-eds-ue"
+    },
+    {
+      "path": "/config/oharris69/sites/merge-edge.json",
+      "name": "merge-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/myriad-onenet-doc.json",
+      "name": "myriad-onenet-doc"
+    },
+    {
+      "path": "/config/oharris69/sites/myriad-onenet.json",
+      "name": "myriad-onenet"
+    },
+    {
+      "path": "/config/oharris69/sites/myriad.json",
+      "name": "myriad"
+    },
+    {
+      "path": "/config/oharris69/sites/ngc-bootcamp.json",
+      "name": "ngc-bootcamp"
+    },
+    {
+      "path": "/config/oharris69/sites/nyu-gallatin-eds.json",
+      "name": "nyu-gallatin-eds"
+    },
+    {
+      "path": "/config/oharris69/sites/nyu.json",
+      "name": "nyu"
+    },
+    {
+      "path": "/config/oharris69/sites/oharris-aem-boilerplate.json",
+      "name": "oharris-aem-boilerplate"
+    },
+    {
+      "path": "/config/oharris69/sites/ou-health-ue.json",
+      "name": "ou-health-ue"
+    },
+    {
+      "path": "/config/oharris69/sites/ouhealth-doc.json",
+      "name": "ouhealth-doc"
+    },
+    {
+      "path": "/config/oharris69/sites/ouhealth.json",
+      "name": "ouhealth"
+    },
+    {
+      "path": "/config/oharris69/sites/owenscorning.json",
+      "name": "owenscorning"
+    },
+    {
+      "path": "/config/oharris69/sites/refdemoda.json",
+      "name": "refdemoda"
+    },
+    {
+      "path": "/config/oharris69/sites/securbank-aem-ue.json",
+      "name": "securbank-aem-ue"
+    },
+    {
+      "path": "/config/oharris69/sites/sodexo.json",
+      "name": "sodexo"
+    },
+    {
+      "path": "/config/oharris69/sites/sol-sc-boilerplate-xwalk.json",
+      "name": "sol-sc-boilerplate-xwalk"
+    },
+    {
+      "path": "/config/oharris69/sites/sol-sc-boilerplate.json",
+      "name": "sol-sc-boilerplate"
+    },
+    {
+      "path": "/config/oharris69/sites/southern-edge.json",
+      "name": "southern-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/spectrum.json",
+      "name": "spectrum"
+    },
+    {
+      "path": "/config/oharris69/sites/spring-green.json",
+      "name": "spring-green"
+    },
+    {
+      "path": "/config/oharris69/sites/takarabio.json",
+      "name": "takarabio"
+    },
+    {
+      "path": "/config/oharris69/sites/trek-edge-delivery.json",
+      "name": "trek-edge-delivery"
+    },
+    {
+      "path": "/config/oharris69/sites/ul-solutions-eds.json",
+      "name": "ul-solutions-eds"
+    },
+    {
+      "path": "/config/oharris69/sites/umich-edge.json",
+      "name": "umich-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/velera-doc.json",
+      "name": "velera-doc"
+    },
+    {
+      "path": "/config/oharris69/sites/velera-edge.json",
+      "name": "velera-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/villanova-edge.json",
+      "name": "villanova-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/wgu.json",
+      "name": "wgu"
+    },
+    {
+      "path": "/config/oharris69/sites/wknd-universal.json",
+      "name": "wknd-universal"
+    },
+    {
+      "path": "/config/oharris69/sites/wknd-xwalk.json",
+      "name": "wknd-xwalk"
+    },
+    {
+      "path": "/config/oharris69/sites/wknd.json",
+      "name": "wknd"
+    },
+    {
+      "path": "/config/oharris69/sites/xsc-wknd-commerce.json",
+      "name": "xsc-wknd-commerce"
+    },
+    {
+      "path": "/config/oharris69/sites/xsc-wknd.json",
+      "name": "xsc-wknd"
+    },
+    {
+      "path": "/config/oharris69/sites/zebra.json",
+      "name": "zebra"
+    },
+    {
+      "path": "/config/oharris69/sites/zs-edge.json",
+      "name": "zs-edge"
+    },
+    {
+      "path": "/config/oharris69/sites/zurnelkay-eds-ue.json",
+      "name": "zurnelkay-eds-ue"
+    }
+  ]
+}
